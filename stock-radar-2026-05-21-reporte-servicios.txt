@@ -1,0 +1,77 @@
+# Mi Simulación AI Stock Moat Radar — 2026-05-21
+
+## Lectura simple para no especialistas
+La señal fuerte del día no es “AI en abstracto”: es infraestructura real. NVIDIA mostró números enormes en data centers; Google y Blackstone pusieron capital para TPUs; y energía volvió al centro con NextEra + Dominion.
+
+La tesis buena no es perseguir cualquier etiqueta AI, sino entender quién cobra peaje: chips, fabricación, electricidad, red, nube y capital.
+
+Pharma también dejó señal: Lilly sigue comprando plataformas, y la FDA marcó riesgo en la cadena gris de semaglutide/GLP-1.
+
+## Ranking por calidad de moat
+- Núcleo serio / peajes AI: NVDA — NVIDIA; TSM — Taiwan Semiconductor; ASML — ASML Holding. Cuellos de botella reales: chips, foundry y litografía.
+- Plataformas estratégicas: GOOGL/GOOG — Alphabet; BX — Blackstone. Google por TPUs/cloud/distribución; Blackstone por capital e infraestructura.
+- Energía como peaje AI: NEE — NextEra Energy; D — Dominion Energy; CEG — Constellation Energy. Sin electricidad no hay data centers.
+- Especulativas con momentum: RKLB — Rocket Lab; RVI — Robinhood Ventures Fund I. Interesantes, pero no mezclarlas con moat AI puro.
+- Narrativa / ambiguas: AAPL — Apple; TSLA — Tesla; HOOD — Robinhood; Gold/GLD/GOLD/B. No hay señal AI directa nueva suficiente hoy.
+
+## Watchlist priorizada de hoy
+- NVDA — NVIDIA Corp: chips/sistemas para data centers AI.
+  Evidencia: ingresos Q1 FY2027 de US$81.6B, Data Center US$75.2B, outlook Q2 US$91B ±2%.
+  Fuente: https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027
+  Riesgo: China/export controls y concentración en ciclo AI. Señal: Núcleo.
+
+- GOOGL/GOOG — Alphabet Inc.: cloud, datos, distribución y TPUs propios.
+  Evidencia: Google + Blackstone crearán TPU cloud; Blackstone compromete US$5B iniciales y 500MW esperados en 2027.
+  Fuente: https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/blackstone-tpu-cloud/
+  Riesgo: también presiona a NVIDIA si custom silicon escala. Señal: Plataforma estratégica.
+
+- NEE — NextEra Energy / D — Dominion Energy: utilities reguladas y energía para demanda eléctrica.
+  Evidencia: combinación all-stock; Dominion holders reciben 0.8138 acciones NEE; pipeline de +130 GW de large-load opportunities.
+  Fuente: https://newsroom.nexteraenergy.com/2026-05-18-NextEra-Energy-and-Dominion-Energy-to-Combine,-Creating-the-Worlds-Largest-Regulated-Electric-Utility-Business-and-North-Americas-Premier-Energy-Infrastructure-Platform-Benefiting-Customers?l=12
+  Riesgo: aprobaciones regulatorias y ejecución. Señal: Interesante / energía AI.
+
+- RKLB — Rocket Lab Corp: aeroespacial/lanzamientos, no AI pura.
+  Evidencia: SEC 8-K por equity distribution agreement de hasta US$3B en acciones comunes.
+  Fuente: https://www.sec.gov/Archives/edgar/data/1819994/000181999426000045/rklb-20260520.htm
+  Riesgo: dilución. Señal: Especulativa con momentum.
+
+- LLY — Eli Lilly: farmacéutica grande; GLP-1 + genética.
+  Evidencia: adquirió Engage Bio por hasta US$202M para medicinas genéticas no virales.
+  Fuente: https://www.biospace.com/press-releases/engage-bio-acquired-by-lilly-to-accelerate-development-of-non-viral-genetic-medicines
+  Riesgo: integración y pipeline temprano. Señal: Interesante pharma.
+
+## Mi Simulación base portfolio — seguimiento rápido
+Variaciones aproximadas vía Yahoo chart endpoint, no tiempo real.
+- RKLB — Rocket Lab: +5.47% día / +14.22% semana. Momentum, pero riesgo nuevo de dilución.
+- NVDA — NVIDIA: +1.30% / +1.22%. Moat fortalecido por resultados.
+- PLTR — Palantir: +1.40% / +0.85%. Vigilar valuación; no hubo señal nueva más fuerte hoy.
+- TSM — Taiwan Semiconductor: +2.29% / +1.09%. Núcleo estructural; foundry como cuello físico.
+- MU — Micron: +4.76% / -4.51%. HBM/memoria AI interesante, pero cíclica.
+- GOOGL — Alphabet: +0.32% / +0.40%. Mejora por TPU cloud.
+- AAPL / HOOD / TSLA: sin catalizador AI directo verificado hoy; tratarlas como narrativa/ecosistema, no núcleo AI.
+- ASML — ASML Holding: +6.21% / +1.92%. Núcleo por EUV/High-NA.
+- Gold/GLD/GOLD/B: instrumento ambiguo; separar oro/ETF/minera antes de concluir.
+- RVI — Robinhood Ventures Fund I: +15.23% / +9.35%. Es fondo cerrado/exposición a privadas, no compañía operativa con moat propio.
+
+## Radar amplio fuera de watchlist
+- BX — Blackstone: proxy público al boom de data centers/TPU cloud con Google.
+- NEE/D: energía y grid pasan a ser infraestructura AI de primera línea.
+- LLY: pharma sigue mostrando capacidad de comprar plataformas.
+- CEG — Constellation Energy: candidato de largo plazo por electricidad nuclear/data centers; hoy no lo subo más porque no hubo fuente nueva principal en esta corrida.
+
+## Red flags / hype para ignorar
+- Rocket Lab subiendo no la convierte en AI moat: es aeroespacial especulativa.
+- RVI puede tener exposición a privadas tipo OpenAI, pero no tiene moat operativo propio.
+- Apple, Tesla y Robinhood necesitan evidencia directa nueva antes de entrar como AI core.
+
+## Próximo paso concreto
+Revisar en detalle el call/materiales de NVIDIA: margen bruto, networking, China, demanda de Blackwell/AI factories y si los TPUs/custom ASICs de Google empiezan a aparecer como presión competitiva real.
+
+No es asesoramiento financiero; es research para decisión humana.
+
+---
+
+SERVICIO PRIVADO
+Si querés comprar o vender dólares, invertir en acciones, ordenar tu cartera o pensar una estrategia financiera más personalizada, escribime por privado y lo vemos caso por caso.
+
+Este reporte gratuito es informativo. No es asesoramiento financiero personalizado ni promesa de resultado.
