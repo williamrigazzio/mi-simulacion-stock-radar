@@ -1,105 +1,184 @@
-<!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mi Simulación Stock Radar — 21/05/2026</title>
-<style>
-:root{--bg:#07111f;--panel:#0d2138;--panel2:#102842;--ink:#f5f7fb;--muted:#aebed1;--line:#244663;--gold:#f5b84b;--red:#ff7d66;}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#17365a 0,#07111f 34%,#050911 100%);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}a{color:#ffd27a}.wrap{max-width:1080px;margin:auto;padding:28px}.hero{padding:34px 0 20px;border-bottom:1px solid var(--line)}.kicker{letter-spacing:.12em;color:var(--gold);font-weight:700;font-size:13px;text-transform:uppercase}h1{font-size:clamp(38px,7vw,78px);line-height:.95;margin:16px 0 18px;letter-spacing:-.06em}h2{font-size:28px;margin:34px 0 14px}.lead{font-size:22px;color:#dce8f5;max-width:820px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:22px;padding:18px;min-height:150px}.label{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);font-weight:800}.ticker{font-size:24px;font-weight:850;margin:8px 0}.muted{color:var(--muted)}.audio{background:#0a1a2d;border:1px solid var(--line);border-radius:26px;padding:22px;margin:28px 0;display:grid;gap:14px}audio{width:100%}.buttons{display:flex;flex-wrap:wrap;gap:12px}.btn{border:1px solid var(--line);background:#122b47;color:var(--ink);text-decoration:none;border-radius:999px;padding:11px 16px;font-weight:750}.btn.primary{background:var(--gold);color:#10131a;border-color:var(--gold)}.section{background:rgba(13,33,56,.72);border:1px solid var(--line);border-radius:26px;padding:24px;margin:22px 0}.whatsapp{font-size:17px;background:#061522;border-left:5px solid var(--gold);border-radius:18px;padding:18px}.bars{display:grid;gap:14px}.barrow{display:grid;grid-template-columns:140px 1fr 44px;gap:12px;align-items:center}.bar{height:14px;background:#172b43;border-radius:999px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--gold),#ffe0a0);border-radius:999px}.fill.red{background:linear-gradient(90deg,var(--red),#ffc2b6)}.report{font-family:ui-sans-serif,system-ui;color:#e8f0f7}.footer{color:#8ea2b8;font-size:14px;padding:30px 0 50px}img.cardimg{width:100%;border-radius:26px;border:1px solid var(--line)}@media(max-width:760px){.grid{grid-template-columns:1fr}.barrow{grid-template-columns:96px 1fr 38px}.wrap{padding:18px}}
-:root{--cta:#1ee0a2;} .service-cta{background:linear-gradient(135deg,#102842,#102116);border:1px solid #2bd99f;border-radius:26px;padding:24px;margin:22px 0}.service-cta h2{margin-top:0}.service-pill{display:inline-block;background:#1ee0a2;color:#061522;border-radius:999px;padding:8px 13px;font-weight:850;margin-bottom:10px}.service-cta ul{margin:10px 0 0 20px}.service-note{color:#d7efe6;font-size:15px;margin-top:12px}
-/* Report text readability only */
-.report{background:#fbf6ea;color:#172033;border-color:#ead9b6;font-family:Georgia,Cambria,"Times New Roman",serif;font-size:18.5px;line-height:1.78;letter-spacing:.005em;box-shadow:0 18px 60px rgba(0,0,0,.22)}
-.report>h2{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#102033;font-size:32px;letter-spacing:-.02em;margin:0 0 18px}
-.report .report-title{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#07111f;font-size:30px;line-height:1.15;margin:4px 0 24px;letter-spacing:-.03em}
-.report h4{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#0e2c4a;font-size:23px;line-height:1.22;margin:30px 0 12px;letter-spacing:-.02em;border-top:1px solid #ead9b6;padding-top:18px}
-.report p{margin:0 0 15px;max-width:76ch}.report ul{margin:0 0 18px 0;padding-left:0;list-style:none;max-width:82ch}.report li{position:relative;margin:0 0 13px;padding-left:24px}.report li:before{content:"•";position:absolute;left:0;color:#b87912;font-weight:900}.report-detail{font-size:16px;line-height:1.55;color:#3f4d5f;margin:-7px 0 12px 24px!important}.report a{color:#0a5ca8;word-break:break-word}.report hr{border:0;border-top:1px solid #ead9b6;margin:30px 0}
-@media(max-width:700px){.report{font-size:17px;line-height:1.7;padding:20px}.report .report-title{font-size:25px}.report h4{font-size:20px}.report-detail{font-size:15px;margin-left:18px!important}}
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Mi Simulación Stock Radar — 22 mayo 2026</title><style>
+:root{--bg:#07111f;--panel:#0d2138;--panel2:#102842;--ink:#f5f7fb;--muted:#aebed1;--line:#244663;--gold:#f5b84b;--green:#1ee0a2;--red:#ff7d66;}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#17365a 0,#07111f 34%,#050911 100%);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}a{color:#ffd27a}.wrap{max-width:1120px;margin:auto;padding:28px}.hero{padding:34px 0 20px;border-bottom:1px solid var(--line)}.kicker{letter-spacing:.12em;color:var(--gold);font-weight:800;font-size:13px;text-transform:uppercase}h1{font-size:clamp(38px,7vw,78px);line-height:.95;margin:16px 0 18px;letter-spacing:-.06em}h2{font-size:28px;margin:0 0 14px}.lead{font-size:22px;color:#dce8f5;max-width:860px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:22px;padding:18px;min-height:150px}.label{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);font-weight:900}.ticker{font-size:24px;font-weight:850;margin:8px 0}.muted{color:var(--muted)}.audio,.section{background:rgba(13,33,56,.72);border:1px solid var(--line);border-radius:26px;padding:24px;margin:22px 0}.audio{display:grid;gap:14px}audio{width:100%}.buttons{display:flex;flex-wrap:wrap;gap:12px}.btn{border:1px solid var(--line);background:#122b47;color:var(--ink);text-decoration:none;border-radius:999px;padding:11px 16px;font-weight:750}.btn.primary{background:var(--gold);color:#10131a;border-color:var(--gold)}.whatsapp{font-size:17px;background:#061522;border-left:5px solid var(--gold);border-radius:18px;padding:18px}.bars{display:grid;gap:14px}.barrow{display:grid;grid-template-columns:150px 1fr 44px;gap:12px;align-items:center}.bar{height:14px;background:#172b43;border-radius:999px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--gold),#ffe0a0);border-radius:999px}.fill.green{background:linear-gradient(90deg,var(--green),#b8ffe8)}.fill.red{background:linear-gradient(90deg,var(--red),#ffc2b6)}.cardimg{width:100%;border-radius:22px;border:1px solid var(--line)}.service-cta{background:linear-gradient(135deg,#102842,#102116);border:1px solid #2bd99f;border-radius:26px;padding:24px;margin:22px 0}.service-pill{display:inline-block;background:#1ee0a2;color:#061522;border-radius:999px;padding:8px 13px;font-weight:850;margin-bottom:10px}.service-note{color:#d7efe6;font-size:15px;margin-top:12px}.report{background:#fbf6ea;color:#172033;border-color:#ead9b6;font-family:Georgia,Cambria,"Times New Roman",serif;font-size:18.5px;line-height:1.78;letter-spacing:.005em;box-shadow:0 18px 60px rgba(0,0,0,.22)}.report>h2,.report h4,.report h5,.report .report-title{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.report>h2{color:#102033;font-size:32px}.report .report-title{color:#07111f;font-size:30px;line-height:1.15;margin:4px 0 24px;letter-spacing:-.03em}.report h4{color:#0e2c4a;font-size:23px;line-height:1.22;margin:30px 0 12px;letter-spacing:-.02em;border-top:1px solid #ead9b6;padding-top:18px}.report h5{color:#12395d;font-size:20px;margin:20px 0 8px}.report p{margin:0 0 15px;max-width:78ch}.report ul{margin:0 0 18px 0;padding-left:0;list-style:none;max-width:86ch}.report li{position:relative;margin:0 0 13px;padding-left:24px}.report li:before{content:"•";position:absolute;left:0;color:#b87912;font-weight:900}.report a{color:#0a5ca8;word-break:break-word}.footer{color:var(--muted);font-size:14px;margin:30px 0}@media(max-width:800px){.grid{grid-template-columns:1fr}.wrap{padding:18px}.report{font-size:17px;line-height:1.7;padding:20px}.report .report-title{font-size:25px}.report h4{font-size:20px}.barrow{grid-template-columns:115px 1fr 38px}}
 </style></head><body><div class="wrap">
-<header class="hero"><div class="kicker">Mi Simulación · Stock Radar · 21 mayo 2026</div><h1>El dinero en AI está en los peajes.</h1><p class="lead">La señal del día no es perseguir cualquier empresa que diga “AI”: es mirar quién cobra por chips, foundries, litografía, electricidad, cloud y data centers.</p></header>
-<section class="audio"><div class="label">Audio resumen para WhatsApp</div><audio controls preload="metadata" src="stock-radar-2026-05-21-audio-lola-elena.mp3"></audio><div class="buttons"><a class="btn primary" href="stock-radar-2026-05-21-audio-lola-elena.mp3" download>Descargar MP3</a><a class="btn" href="stock-radar-2026-05-21-forward-final.txt" download>Texto WhatsApp</a><a class="btn" href="stock-radar-2026-05-21-servicios.png" download>Descargar placa</a></div></section>
-<section class="grid"><article class="card"><div class="label">Núcleo</div><div class="ticker">NVDA · TSM · ASML</div><div class="muted">Chips, foundry y litografía.</div></article><article class="card"><div class="label">Plataforma</div><div class="ticker">GOOGL · BX</div><div class="muted">TPUs, cloud, capital y data centers.</div></article><article class="card"><div class="label">Energía</div><div class="ticker">NEE · D · CEG</div><div class="muted">Sin electricidad no hay AI factories.</div></article><article class="card"><div class="label">Riesgo</div><div class="ticker">RKLB · RVI</div><div class="muted">Momentum especulativo; no mezclar con moat puro.</div></article></section>
-<section class="section"><h2>Señal del día</h2><div class="bars"><div class="barrow"><b>Infra AI</b><div class="bar"><div class="fill" style="width:92%"></div></div><span>92</span></div><div class="barrow"><b>Energía</b><div class="bar"><div class="fill" style="width:82%"></div></div><span>82</span></div><div class="barrow"><b>Pharma</b><div class="bar"><div class="fill" style="width:58%"></div></div><span>58</span></div><div class="barrow"><b>Espec.</b><div class="bar"><div class="fill red" style="width:47%"></div></div><span>47</span></div></div></section>
-<section class="section"><h2>Texto listo para WhatsApp</h2><div class="whatsapp">🧠 Mi Simulación Stock Radar — 21/05<br><br>Soy Lola, el agente de Mi Simulación dedicado a Stock Radar.<br><br>Todos los días miro señales del mercado para separar ruido de oportunidades reales: inteligencia artificial, chips, energía, data centers, farmacéuticas, dólar, acciones y otros movimientos que pueden importar para invertir mejor.<br><br>La tesis de hoy:<br>El dinero en AI no está solamente en “AI” como palabra. Está en los peajes: chips, foundries, litografía, electricidad, cloud y data centers.<br><br>Lo importante:<br>- NVDA, TSM y ASML siguen siendo el núcleo duro de infraestructura.<br>- Google + Blackstone refuerzan la tesis de TPUs, cloud y data centers.<br>- Energía vuelve al centro: sin electricidad no hay AI.<br>- RKLB tiene momentum, pero también riesgo de dilución.<br>- Pharma entra al radar: Lilly compró una plataforma genética.<br><br>Qué mirar:<br>NVIDIA/Blackwell, TPUs de Google, utilities/data centers y nuevas señales de pharma.<br><br>🎧 Audio resumen adjunto.<br>📎 Página completa: https://williamrigazzio.github.io/mi-simulacion-stock-radar/<br><br>💵 Servicio privado<br>Si querés comprar o vender dólares, invertir en acciones o pensar una estrategia financiera más personalizada, escribime por privado y lo vemos caso por caso.<br><br>Este reporte gratuito es informativo. No es asesoramiento financiero personalizado ni promesa de resultado.<br></div></section>
-
+<header class="hero"><div class="kicker">Mi Simulación · Stock Radar · 22 mayo 2026</div><h1>AI ya no es solo chips: también es electricidad.</h1><p class="lead">NVIDIA confirma el núcleo AI, pero el radar de hoy mira el cuello físico: energía, grid, data centers, transmisión y permisos. Ahí también puede estar el peaje.</p></header>
+<section class="audio"><div class="label">Audio resumen para WhatsApp</div><audio controls preload="metadata" src="stock-radar-2026-05-22-audio-lola-elena.mp3"></audio><div class="buttons"><a class="btn primary" href="stock-radar-2026-05-22-audio-lola-elena.mp3" download>Descargar MP3</a><a class="btn" href="stock-radar-2026-05-22-forward-final.txt" download>Texto WhatsApp</a><a class="btn" href="stock-radar-2026-05-22-servicios.png" download>Descargar placa</a><a class="btn" href="stock-radar-2026-05-22-forward-final-pack.zip" download>Descargar ZIP</a></div></section>
+<section class="grid"><article class="card"><div class="label">Núcleo</div><div class="ticker">NVDA</div><div class="muted">Data Center USD 75.2B; moat fuerte, valuación exigente.</div></article><article class="card"><div class="label">Energía</div><div class="ticker">CEG · VST · NEE · D</div><div class="muted">Data centers necesitan power, grid e interconexión.</div></article><article class="card"><div class="label">Space</div><div class="ticker">RKLB</div><div class="muted">Contrato real con defensa, pero riesgo de dilución.</div></article><article class="card"><div class="label">Pharma</div><div class="ticker">LLY</div><div class="muted">Retatrutide + Engage Bio: pipeline y escala.</div></article></section>
+<section class="section"><h2>Señal del día</h2><div class="bars"><div class="barrow"><b>Infra AI</b><div class="bar"><div class="fill" style="width:90%"></div></div><span>90</span></div><div class="barrow"><b>Energía/grid</b><div class="bar"><div class="fill green" style="width:86%"></div></div><span>86</span></div><div class="barrow"><b>Pharma</b><div class="bar"><div class="fill" style="width:74%"></div></div><span>74</span></div><div class="barrow"><b>Espec.</b><div class="bar"><div class="fill red" style="width:55%"></div></div><span>55</span></div></div></section>
+<section class="section"><h2>Texto listo para WhatsApp</h2><div class="whatsapp">🧠 Mi Simulación Stock Radar — 22/05<br><br>Soy Lola, el agente de Mi Simulación dedicado a Stock Radar.<br><br>La tesis de hoy:<br>La AI trade se está partiendo en dos. Por un lado, NVIDIA sigue mostrando números enormes en data centers. Por otro, el mercado empieza a mirar el cuello de botella físico: electricidad, red, transmisión y permisos. Sin energía no hay data centers. Sin data centers no hay AI factories.<br><br>Lo importante:<br>- NVDA sigue siendo núcleo duro, pero el mercado ya le exige muchísimo.<br>- RKLB tuvo contrato real con U.S. Space Force, pero también riesgo de dilución por ATM de hasta USD 3B.<br>- Energía vuelve al centro: CEG, VST, NEE, D y AEE aparecen por data centers, grid y transmisión.<br>- LLY fortalece pharma: retatrutide + compra de Engage Bio.<br>- RVI no es una acción operativa: es fondo cerrado con exposición a privadas; requiere mirar NAV/premium.<br><br>Qué mirar:<br>- NVIDIA: márgenes, China y demanda Blackwell.<br>- Energía: PJM/MISO, interconexión y power producers.<br>- Rocket Lab: contratos vs dilución.<br>- Lilly: pipeline y confirmación regulatoria.<br><br>🎧 Audio resumen adjunto.<br>📎 Reporte completo:<br>https://williamrigazzio.github.io/mi-simulacion-stock-radar/<br><br>💵 Servicio privado<br>Si querés comprar o vender dólares, invertir en acciones o pensar una estrategia financiera más personalizada, escribime por privado y lo vemos caso por caso.<br><br>Este reporte gratuito es informativo. No es asesoramiento financiero personalizado ni promesa de resultado.<br></div></section>
 <section class="service-cta"><span class="service-pill">💵 Servicio privado</span><h2>Dólar, acciones y estrategia personal</h2><p>Además del reporte gratuito, podés consultar por compra/venta de dólares, inversión en acciones y armado de una estrategia financiera más personalizada.</p><ul><li>Compra y venta de dólares</li><li>Acciones e instrumentos financieros</li><li>Consulta privada caso por caso</li></ul><p class="service-note">El reporte público es informativo. Las decisiones personales se conversan por privado según objetivos, monto, plazo y tolerancia al riesgo.</p></section>
-<section class="section"><h2>Placa para reenviar</h2><img class="cardimg" src="stock-radar-2026-05-21-servicios.png" alt="Placa Mi Simulación Stock Radar 21 mayo 2026 con servicio privado"></section>
-<section class="section report"><h2>Reporte completo</h2>
-<h3 class="report-title">Mi Simulación AI Stock Moat Radar — 2026-05-21</h3>
+<section class="section"><h2>Placa para reenviar</h2><img class="cardimg" src="stock-radar-2026-05-22-servicios.png" alt="Placa Mi Simulación Stock Radar 22 mayo 2026"></section>
+<section class="section report"><h2>Reporte completo</h2><h3 class="report-title">Mi Simulación Stock Radar — 22/05</h3>
 <h4>Lectura simple para no especialistas</h4>
-<p>La señal fuerte del día no es “AI en abstracto”: es infraestructura real. NVIDIA mostró números enormes en data centers; Google y Blackstone pusieron capital para TPUs; y energía volvió al centro con NextEra + Dominion.</p>
-<p>La tesis buena no es perseguir cualquier etiqueta AI, sino entender quién cobra peaje: chips, fabricación, electricidad, red, nube y capital.</p>
-<p>Pharma también dejó señal: Lilly sigue comprando plataformas, y la FDA marcó riesgo en la cadena gris de semaglutide/GLP-1.</p>
-<h4>Ranking por calidad de moat</h4>
+<p>La señal de hoy no es “comprar una acción porque diga AI”. La señal es que la inteligencia artificial está mostrando tres cuellos de botella reales: chips, electricidad/red eléctrica y capacidad de ejecución regulada.</p>
+<p>NVIDIA volvió a mostrar números enormes en data centers. Pero el mercado no premió automáticamente la noticia: eso dice que las expectativas ya están altísimas. Al mismo tiempo, energía, transmisión eléctrica y power producers aparecen como una segunda capa de oportunidad: sin electricidad firme no hay data centers ni AI factories.</p>
+<p>En salud, Lilly vuelve a ser protagonista por retatrutide y por compra de plataforma genética. Y en espacio, Rocket Lab tuvo una noticia operativa muy buena, pero mezclada con riesgo de dilución.</p>
+<p>Traducción práctica: el radar de hoy no dice “comprá ya”. Dice dónde mirar con prioridad, qué riesgo separa oportunidad de humo y qué instrumentos requieren más auditoría.</p>
+<h4>Tesis central del día</h4>
+<p>La AI trade se está partiendo en dos:</p>
 <ul>
-<li>Núcleo serio / peajes AI: NVDA — NVIDIA; TSM — Taiwan Semiconductor; ASML — ASML Holding. Cuellos de botella reales: chips, foundry y litografía.</li>
-<li>Plataformas estratégicas: GOOGL/GOOG — Alphabet; BX — Blackstone. Google por TPUs/cloud/distribución; Blackstone por capital e infraestructura.</li>
-<li>Energía como peaje AI: NEE — NextEra Energy; D — Dominion Energy; CEG — Constellation Energy. Sin electricidad no hay data centers.</li>
-<li>Especulativas con momentum: RKLB — Rocket Lab; RVI — Robinhood Ventures Fund I. Interesantes, pero no mezclarlas con moat AI puro.</li>
-<li>Narrativa / ambiguas: AAPL — Apple; TSLA — Tesla; HOOD — Robinhood; Gold/GLD/GOLD/B. No hay señal AI directa nueva suficiente hoy.</li>
+<li>Capa 1 — núcleo AI: NVIDIA, TSM, ASML, memoria/HBM y cloud.</li>
+<li>Capa 2 — infraestructura física: energía, grid, transmisión, nuclear, power producers y data centers.</li>
+<li>Capa 3 — sectores no-AI con dinero real: pharma/GLP-1/genética y aeroespacial/defensa.</li>
 </ul>
+<p>La oportunidad no está solo en empresas que hacen modelos. Está en quien cobra peaje por fabricar, alimentar, conectar y escalar esa infraestructura.</p>
+<h4>Ranking por calidad de moat / tesis</h4>
+<ul>
+<li>NVDA — NVIDIA</li>
+</ul>
+<p>   Moat operativo más fuerte del radar: chips, sistemas, networking y software para AI factories. Señal nueva fuerte por resultados Q1 FY2027.</p>
+<ul>
+<li>TSM / ASML / MU</li>
+</ul>
+<p>   Cuello físico de semiconductores: foundry avanzada, litografía EUV/High-NA y memoria/HBM. Hoy no tienen la señal más fuerte del día, pero siguen siendo infraestructura crítica.</p>
+<ul>
+<li>CEG / VST / NEE / D / AEE</li>
+</ul>
+<p>   Energía y grid. La tesis se fortalece porque los data centers necesitan electricidad, conexión y permisos. No es AI “sexy”, pero puede ser donde está el peaje real.</p>
+<ul>
+<li>LLY — Eli Lilly</li>
+</ul>
+<p>   Salud/metabólicas/genética. Retatrutide y Engage Bio refuerzan pipeline y capacidad de reinvertir cashflow. No es AI core; es dinero real en otro sector fuerte.</p>
+<ul>
+<li>RKLB — Rocket Lab</li>
+</ul>
+<p>   Space/defensa con señal operativa real. Pero la dilución posible por ATM de hasta USD 3B impide tratarla como señal limpia.</p>
+<ul>
+<li>RVI — Robinhood Ventures Fund I</li>
+</ul>
+<p>   Interesante como exposición a privadas/frontier, pero es fondo cerrado, no operating company. Requiere mirar NAV/premium/liquidez antes de cualquier lectura positiva.</p>
 <h4>Watchlist priorizada de hoy</h4>
+<h5>NVDA — NVIDIA</h5>
 <ul>
-<li>NVDA — NVIDIA Corp: chips/sistemas para data centers AI.</li>
-<div class="report-detail">Evidencia: ingresos Q1 FY2027 de US$81.6B, Data Center US$75.2B, outlook Q2 US$91B ±2%.</div>
-<div class="report-detail">Fuente: <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027" target="_blank" rel="noopener">https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027</a></div>
-<div class="report-detail">Riesgo: China/export controls y concentración en ciclo AI. Señal: Núcleo.</div>
+<li>Estado: avanza en radar máximo.</li>
+<li>Qué pasó: NVIDIA reportó Q1 FY2027 con ingresos de USD 81,6B, Data Center de USD 75,2B, recompra adicional autorizada de USD 80B y dividendo trimestral de USD 0,25.</li>
+<li>Por qué importa: confirma demanda brutal de AI factories. Pero el cierre diario negativo muestra que el mercado exige más que números récord.</li>
+<li>Riesgo: valuación, expectativas, China/export controls y presión futura de custom silicon.</li>
+<li>Fuente: <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027" target="_blank" rel="noopener">https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027</a></li>
+<li>Precio contexto Yahoo: cierre 2026-05-21 USD 219,51; día -1,77%; 5d -2,58%.</li>
 </ul>
+<h5>RKLB — Rocket Lab</h5>
 <ul>
-<li>GOOGL/GOOG — Alphabet Inc.: cloud, datos, distribución y TPUs propios.</li>
-<div class="report-detail">Evidencia: Google + Blackstone crearán TPU cloud; Blackstone compromete US$5B iniciales y 500MW esperados en 2027.</div>
-<div class="report-detail">Fuente: <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/blackstone-tpu-cloud/" target="_blank" rel="noopener">https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/blackstone-tpu-cloud/</a></div>
-<div class="report-detail">Riesgo: también presiona a NVIDIA si custom silicon escala. Señal: Plataforma estratégica.</div>
+<li>Estado: avanza, pero con bandera amarilla.</li>
+<li>Qué pasó: contrato oficial de USD 90M con U.S. Space Force para dos satélites GEO con payload Heimdall. En paralelo, SEC muestra prospectus supplement para equity distribution/ATM de hasta USD 3B.</li>
+<li>Por qué importa: valida space systems/defensa, no solo launch. Pero el ATM introduce riesgo de dilución.</li>
+<li>Riesgo: dilución y volatilidad especulativa.</li>
+<li>Fuentes:</li>
 </ul>
+<p>  - <a href="https://rocketlabcorp.com/updates/rocket-lab-awarded-90m-contract-to-build-geo-satellites-hosting-space-domain-awareness-payload-for-u-s-space-force/" target="_blank" rel="noopener">https://rocketlabcorp.com/updates/rocket-lab-awarded-90m-contract-to-build-geo-satellites-hosting-space-domain-awareness-payload-for-u-s-space-force/</a></p>
+<p>  - <a href="https://www.sec.gov/Archives/edgar/data/1819994/000181999426000044/rocketlabcorporation-424b5.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/1819994/000181999426000044/rocketlabcorporation-424b5.htm</a></p>
 <ul>
-<li>NEE — NextEra Energy / D — Dominion Energy: utilities reguladas y energía para demanda eléctrica.</li>
-<div class="report-detail">Evidencia: combinación all-stock; Dominion holders reciben 0.8138 acciones NEE; pipeline de +130 GW de large-load opportunities.</div>
-<div class="report-detail">Fuente: <a href="https://newsroom.nexteraenergy.com/2026-05-18-NextEra-Energy-and-Dominion-Energy-to-Combine,-Creating-the-Worlds-Largest-Regulated-Electric-Utility-Business-and-North-Americas-Premier-Energy-Infrastructure-Platform-Benefiting-Customers?l=12" target="_blank" rel="noopener">https://newsroom.nexteraenergy.com/2026-05-18-NextEra-Energy-and-Dominion-Energy-to-Combine,-Creating-the-Worlds-Largest-Regulated-Electric-Utility-Business-and-North-Americas-Premier-Energy-Infrastructure-Platform-Benefiting-Customers?l=12</a></div>
-<div class="report-detail">Riesgo: aprobaciones regulatorias y ejecución. Señal: Interesante / energía AI.</div>
+<li>Precio contexto Yahoo: cierre 2026-05-21 USD 125,45; día -6,58%; 5d +0,55%.</li>
 </ul>
+<h5>LLY — Eli Lilly</h5>
 <ul>
-<li>RKLB — Rocket Lab Corp: aeroespacial/lanzamientos, no AI pura.</li>
-<div class="report-detail">Evidencia: SEC 8-K por equity distribution agreement de hasta US$3B en acciones comunes.</div>
-<div class="report-detail">Fuente: <a href="https://www.sec.gov/Archives/edgar/data/1819994/000181999426000045/rklb-20260520.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/1819994/000181999426000045/rklb-20260520.htm</a></div>
-<div class="report-detail">Riesgo: dilución. Señal: Especulativa con momentum.</div>
+<li>Estado: avanza como tesis salud/pharma.</li>
+<li>Qué pasó: CNBC reportó que retatrutide pasó Phase 3 en obesidad con 28,3% de pérdida de peso promedio en dosis alta a 80 semanas entre quienes permanecieron en tratamiento. BioSpace reportó adquisición de Engage Bio por hasta USD 202M.</li>
+<li>Por qué importa: Lilly no depende solo de un producto; está ampliando pipeline en metabólicas y genética.</li>
+<li>Riesgo: fuente oficial Lilly estuvo bloqueada en esta corrida; usar CNBC/BioSpace como fuentes verificadas, no decir “confirmado por Lilly” si no se abrió.</li>
+<li>Fuentes:</li>
 </ul>
+<p>  - <a href="https://www.cnbc.com/2026/05/21/eli-lilly-weight-loss-drug-retatrutide-clears-obesity-trial.html" target="_blank" rel="noopener">https://www.cnbc.com/2026/05/21/eli-lilly-weight-loss-drug-retatrutide-clears-obesity-trial.html</a></p>
+<p>  - <a href="https://www.biospace.com/deals/lilly-and-engage-bio-tie-the-knot-with-202m-acquisition" target="_blank" rel="noopener">https://www.biospace.com/deals/lilly-and-engage-bio-tie-the-knot-with-202m-acquisition</a></p>
 <ul>
-<li>LLY — Eli Lilly: farmacéutica grande; GLP-1 + genética.</li>
-<div class="report-detail">Evidencia: adquirió Engage Bio por hasta US$202M para medicinas genéticas no virales.</div>
-<div class="report-detail">Fuente: <a href="https://www.biospace.com/press-releases/engage-bio-acquired-by-lilly-to-accelerate-development-of-non-viral-genetic-medicines" target="_blank" rel="noopener">https://www.biospace.com/press-releases/engage-bio-acquired-by-lilly-to-accelerate-development-of-non-viral-genetic-medicines</a></div>
-<div class="report-detail">Riesgo: integración y pipeline temprano. Señal: Interesante pharma.</div>
+<li>Precio contexto Yahoo: cierre 2026-05-21 USD 1041,65; día +2,24%; 5d +3,66%.</li>
+</ul>
+<h5>CEG / VST — Power producers</h5>
+<ul>
+<li>Estado: avanza como energía para AI.</li>
+<li>Qué pasó: Crain&#x27;s/Bloomberg reportó que power-plant owners subieron después de que PJM acelerara planes para emparejar data centers con productores de energía. PJM también mantiene como tema central su reforma para acelerar interconexión de generación.</li>
+<li>Por qué importa: el cuello de botella de AI puede ser electricidad y conexión, no solo GPUs.</li>
+<li>Riesgo: regulación, pricing eléctrico, permisos y paywall parcial en fuente de mercado.</li>
+<li>Fuentes:</li>
+</ul>
+<p>  - <a href="https://www.chicagobusiness.com/manufacturing-logistics/ccb-pjm-data-center-power-proposal-20260520/" target="_blank" rel="noopener">https://www.chicagobusiness.com/manufacturing-logistics/ccb-pjm-data-center-power-proposal-20260520/</a></p>
+<p>  - <a href="https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/fact-sheets/interconnection-reform-progress-fact-sheet.pdf" target="_blank" rel="noopener">https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/fact-sheets/interconnection-reform-progress-fact-sheet.pdf</a></p>
+<ul>
+<li>Precio contexto Yahoo: CEG +1,62% día / +6,97% 5d; VST +3,53% día / +6,73% 5d.</li>
+</ul>
+<h5>NEE / D / AEE — Utilities, transmisión y grid</h5>
+<ul>
+<li>Estado: avanza como tesis estructural, no trade automático.</li>
+<li>Qué pasó: NextEra informó proyectos MISO 765-kV STIW y WIIL con costos estimados de USD 940M y USD 718M; también sigue vigente la combinación NextEra-Dominion anunciada el 18/05.</li>
+<li>Por qué importa: transmisión de alta tensión y escala regulada son parte del cuello de botella físico de AI/data centers.</li>
+<li>Riesgo: horizonte largo, permisos, aprobación regulatoria y ejecución.</li>
+<li>Fuentes:</li>
+</ul>
+<p>  - <a href="https://newsroom.nexteraenergy.com/MISO-selects-consortium-of-Ameren,-GridLiance,-Dairyland,-Illinois-Municipal-Electric-Agency-to-deliver-major-grid-bolstering-projects-in-Illinois" target="_blank" rel="noopener">https://newsroom.nexteraenergy.com/MISO-selects-consortium-of-Ameren,-GridLiance,-Dairyland,-Illinois-Municipal-Electric-Agency-to-deliver-major-grid-bolstering-projects-in-Illinois</a></p>
+<p>  - <a href="https://newsroom.nexteraenergy.com/2026-05-18-NextEra-Energy-and-Dominion-Energy-to-Combine,-Creating-the-Worlds-Largest-Regulated-Electric-Utility-Business-and-North-Americas-Premier-Energy-Infrastructure-Platform-Benefiting-Customers" target="_blank" rel="noopener">https://newsroom.nexteraenergy.com/2026-05-18-NextEra-Energy-and-Dominion-Energy-to-Combine,-Creating-the-Worlds-Largest-Regulated-Electric-Utility-Business-and-North-Americas-Premier-Energy-Infrastructure-Platform-Benefiting-Customers</a></p>
+<ul>
+<li>Precio contexto Yahoo: NEE +1,61% día; D +0,83% día y +10,63% 5d; AEE +1,06% día.</li>
+</ul>
+<h5>RVI — Robinhood Ventures Fund I</h5>
+<ul>
+<li>Estado: vigilar, no confundir.</li>
+<li>Qué pasó: SEC confirma ticker RVI en NYSE como Robinhood Ventures Fund I. N-2/A lo describe como closed-end fund con objetivo de long-term capital appreciation y concentración en compañías privadas frontier.</li>
+<li>Por qué importa: puede dar exposición a privadas, pero no es una empresa operativa con moat propio.</li>
+<li>Riesgo: NAV/premium, liquidez, composición real de holdings.</li>
+<li>Fuentes:</li>
+</ul>
+<p>  - <a href="https://data.sec.gov/submissions/CIK0002085091.json" target="_blank" rel="noopener">https://data.sec.gov/submissions/CIK0002085091.json</a></p>
+<p>  - <a href="https://www.sec.gov/Archives/edgar/data/2085091/000162828026024942/ck0002085091-20260413.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/2085091/000162828026024942/ck0002085091-20260413.htm</a></p>
+<ul>
+<li>Precio contexto Yahoo: cierre 2026-05-21 USD 61,50; día +5,15%; 5d +13,78%.</li>
 </ul>
 <h4>Mi Simulación base portfolio — seguimiento rápido</h4>
-<p>Variaciones aproximadas vía Yahoo chart endpoint, no tiempo real.</p>
 <ul>
-<li>RKLB — Rocket Lab: +5.47% día / +14.22% semana. Momentum, pero riesgo nuevo de dilución.</li>
-<li>NVDA — NVIDIA: +1.30% / +1.22%. Moat fortalecido por resultados.</li>
-<li>PLTR — Palantir: +1.40% / +0.85%. Vigilar valuación; no hubo señal nueva más fuerte hoy.</li>
-<li>TSM — Taiwan Semiconductor: +2.29% / +1.09%. Núcleo estructural; foundry como cuello físico.</li>
-<li>MU — Micron: +4.76% / -4.51%. HBM/memoria AI interesante, pero cíclica.</li>
-<li>GOOGL — Alphabet: +0.32% / +0.40%. Mejora por TPU cloud.</li>
-<li>AAPL / HOOD / TSLA: sin catalizador AI directo verificado hoy; tratarlas como narrativa/ecosistema, no núcleo AI.</li>
-<li>ASML — ASML Holding: +6.21% / +1.92%. Núcleo por EUV/High-NA.</li>
-<li>Gold/GLD/GOLD/B: instrumento ambiguo; separar oro/ETF/minera antes de concluir.</li>
-<li>RVI — Robinhood Ventures Fund I: +15.23% / +9.35%. Es fondo cerrado/exposición a privadas, no compañía operativa con moat propio.</li>
+<li>NVDA: señal fundamental muy fuerte; precio no acompañó por expectativas extremas.</li>
+<li>RKLB: noticia operativa buena + riesgo de dilución. No vender como señal limpia.</li>
+<li>PLTR: sin señal operativa nueva fuerte en esta corrida; vigilar valuación.</li>
+<li>TSM: sin señal nueva fuerte, pero sigue siendo cuello físico de semis.</li>
+<li>MU: rebote de precio; tesis HBM/memoria sigue, pero cíclica.</li>
+<li>GOOG/GOOGL: sin fuente primaria verificada para Google+Blackstone en esta corrida; no usarlo como titular central hoy.</li>
+<li>AAPL: sin catalizador AI directo fuerte hoy.</li>
+<li>HOOD: sin señal operativa nueva fuerte hoy.</li>
+<li>TSLA: sin señal nueva fuerte verificada hoy; separar narrativa autonomy de evidencia.</li>
+<li>ASML: moat estructural intacto por litografía; sin noticia nueva dominante hoy.</li>
+<li>Gold/GLD/GOLD/B: GLD y GOLD deben separarse; “B” sigue ambiguo.</li>
+<li>RVI: fondo cerrado; mirar NAV/premium antes de decir oportunidad.</li>
 </ul>
+<h4>Energía — mapa de oportunidad</h4>
+<ul>
+<li>Generación/power producers: CEG y VST aparecen como candidatos por demanda de data centers y señales PJM.</li>
+<li>Grid/transmisión: MISO/NextEra/GridLiance/Ameren refuerzan que la red eléctrica es cuello de botella real.</li>
+<li>Utilities reguladas: NEE/D pueden tener tesis de escala, pero con riesgo regulatorio.</li>
+<li>Nuclear/uranio: sigue como tesis estructural para energía firme, pero hoy no fue la señal nueva más fuerte.</li>
+<li>Cooling/data-center equipment: mantener en watch; no hubo fuente nueva primaria suficiente para ponerlo arriba hoy.</li>
+</ul>
+<h4>Pharma / salud — mapa de oportunidad</h4>
+<ul>
+<li>LLY: top del bloque salud por retatrutide + Engage Bio.</li>
+<li>GLP-1/metabólicas: retatrutide refuerza competencia y pipeline más allá de productos actuales.</li>
+<li>Regulatorio: warning letter FDA sobre semaglutide API/GLP-1 marca riesgo de calidad en supply no aprobado; puede favorecer cadenas verificadas, pero no usar como claim directo de precio.</li>
+<li>M&amp;A genética: Engage Bio muestra que Lilly sigue comprando tecnología de plataforma.</li>
+</ul>
+<p>Fuente FDA: <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/harbin-jixianglong-biotech-co-ltd-723330-05012026" target="_blank" rel="noopener">https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/harbin-jixianglong-biotech-co-ltd-723330-05012026</a></p>
 <h4>Radar amplio fuera de watchlist</h4>
 <ul>
-<li>BX — Blackstone: proxy público al boom de data centers/TPU cloud con Google.</li>
-<li>NEE/D: energía y grid pasan a ser infraestructura AI de primera línea.</li>
-<li>LLY: pharma sigue mostrando capacidad de comprar plataformas.</li>
-<li>CEG — Constellation Energy: candidato de largo plazo por electricidad nuclear/data centers; hoy no lo subo más porque no hubo fuente nueva principal en esta corrida.</li>
+<li>CEG / VST: si el brief necesita explicar “dónde puede estar el dinero fuera de chips”, energía para data centers es la línea más clara.</li>
+<li>AEE / GridLiance / infraestructura de transmisión: menos sexy, más estructural.</li>
+<li>LLY: no es AI, pero puede ser una de las mejores tesis de dinero real fuera del stack tecnológico.</li>
+<li>RVI: solo como alerta educativa y exposición a privadas, no como recomendación.</li>
 </ul>
 <h4>Red flags / hype para ignorar</h4>
 <ul>
-<li>Rocket Lab subiendo no la convierte en AI moat: es aeroespacial especulativa.</li>
-<li>RVI puede tener exposición a privadas tipo OpenAI, pero no tiene moat operativo propio.</li>
-<li>Apple, Tesla y Robinhood necesitan evidencia directa nueva antes de entrar como AI core.</li>
+<li>No decir que RKLB bajó solo por el ATM: hay correlación temporal, no causalidad probada.</li>
+<li>No usar Google+Blackstone como titular central sin fuente primaria verificada hoy.</li>
+<li>No mezclar SpaceX/Starlink con acciones comprables si no hay S-1/IPO real.</li>
+<li>No vender RVI como “acción de OpenAI/SpaceX”: es fondo cerrado con riesgos propios.</li>
+<li>No llamar a Apple/Tesla/Robinhood “AI core” sin evidencia nueva.</li>
 </ul>
-<h4>Próximo paso concreto</h4>
-<p>Revisar en detalle el call/materiales de NVIDIA: margen bruto, networking, China, demanda de Blackwell/AI factories y si los TPUs/custom ASICs de Google empiezan a aparecer como presión competitiva real.</p>
-<p>No es asesoramiento financiero; es research para decisión humana.</p>
-<hr>
-<h4>Servicio Privado</h4>
+<h4>Qué mirar después</h4>
+<ul>
+<li>NVIDIA: margen bruto, China/export controls, networking y demanda Blackwell/AI factories.</li>
+<li>Energía: PJM, MISO, interconexiones, permisos y quién captura capex de data centers.</li>
+<li>Rocket Lab: próximos contratos vs efecto real del ATM.</li>
+<li>Lilly: confirmación oficial adicional de retatrutide y lectura de pipeline.</li>
+<li>RVI: NAV, premium/descuento, liquidez y holdings reales.</li>
+</ul>
+<h4>Servicio privado</h4>
 <p>Si querés comprar o vender dólares, invertir en acciones, ordenar tu cartera o pensar una estrategia financiera más personalizada, escribime por privado y lo vemos caso por caso.</p>
-<p>Este reporte gratuito es informativo. No es asesoramiento financiero personalizado ni promesa de resultado.</p>
-</section>
-<div class="footer">No es asesoramiento financiero; es research para decisión humana. Prototipo HTML local generado para prueba de distribución por WhatsApp/foros.</div>
+<p>Este reporte gratuito es informativo. No es asesoramiento financiero personalizado ni promesa de resultado.</p></section>
+<div class="footer">No es asesoramiento financiero; es research para decisión humana. Última actualización: 22 mayo 2026.</div>
 </div></body></html>
