@@ -1,169 +1,115 @@
 <!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mi Simulación Stock Radar — 23/05 — versión auditada</title>
-<meta name="description" content="Stock Radar educativo para Argentina: AI, dólar, CEDEARs, energía, pharma y riesgo.">
-<style>
-:root{--bg:#07101f;--card:#101b31;--text:#eef4ff;--muted:#bfd0ea;--accent:#62dccd;--line:#4067ff;}
-*{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top,#132444,#07101f 50%,#050914);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.62} a{color:var(--accent)}
-.wrap{max-width:1040px;margin:auto;padding:28px 18px 56px} .hero{border:1px solid rgba(98,220,205,.45);border-radius:28px;background:rgba(16,27,49,.82);padding:28px;margin-bottom:22px;box-shadow:0 24px 80px rgba(0,0,0,.32)}
-.kicker{color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.88rem} h1{font-size:clamp(2rem,6vw,4rem);line-height:1.04;margin:.35em 0} h2{margin-top:2.1em;color:#fff;border-top:1px solid rgba(98,220,205,.25);padding-top:1.1em} h3{color:#dfe9ff} p,li{font-size:1.05rem;color:var(--muted)} strong{color:#fff} .assets{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:22px 0} .btn{display:block;text-align:center;padding:13px 14px;border:1px solid rgba(98,220,205,.55);border-radius:16px;background:#0c2945;color:#fff;text-decoration:none;font-weight:700} .share{width:100%;border-radius:24px;border:1px solid rgba(98,220,205,.5);margin:18px 0;background:#101b31} .report{background:rgba(16,27,49,.88);border:1px solid rgba(64,103,255,.35);border-radius:28px;padding:28px} .notice{padding:16px;border-radius:18px;background:#081827;border:1px solid rgba(98,220,205,.35);color:var(--muted)} audio{width:100%}
-</style>
-</head><body><main class="wrap">
-<section class="hero"><div class="kicker">Mi Simulación Stock Radar · versión auditada · 23/05</div><h1>AI no es solo chips</h1><p>Lectura educativa para Argentina: negocio, precio, instrumento, dólar implícito y riesgo. Sin cuadro amarillo, sin ranking de compra, sin promesas.</p>
-<img class="share" src="stock-radar-2026-05-23-servicios-v2-sin-amarillo.png" alt="Stock Radar versión auditada sin cuadro amarillo">
-<audio controls src="stock-radar-2026-05-23-audio-lola-kore-v2-auditado.mp3"></audio>
-<div class="assets">
-<a class="btn" href="stock-radar-2026-05-23-audio-lola-kore-v2-auditado.mp3">Descargar audio MP3</a>
-<a class="btn" href="stock-radar-2026-05-23-whatsapp-reenvio-v2-auditado.txt">Texto WhatsApp</a>
-<a class="btn" href="stock-radar-2026-05-23-reporte-completo-v2-auditado.md">Reporte .md</a>
-<a class="btn" href="stock-radar-2026-05-23-pack-v2-auditado.zip">Pack ZIP</a>
-</div>
-<div class="notice">Este reporte es educativo e informativo. No es asesoramiento financiero personalizado ni recomendación de compra/venta.</div></section>
-<section class="report"><h1>Mi Simulación Stock Radar — 23/05 — versión auditada</h1>
-<h2>1. Lectura simple del día</h2>
-<p>La idea de hoy, en criollo: <strong>la inteligencia artificial sigue siendo importante, pero no alcanza con mirar “la acción de moda”</strong>. Detrás de AI hay una cadena completa:</p>
-<ul>
-<li>chips y servidores;</li>
-<li>fábricas de chips;</li>
-<li>memoria;</li>
-<li>data centers;</li>
-<li>electricidad;</li>
-<li>empresas que pueden financiar infraestructura enorme;</li>
-<li>software que convierte esa infraestructura en negocio real.</li>
-</ul>
-<p>Para una persona en Argentina, la pregunta no es solo “¿NVIDIA sube o baja?”. La pregunta correcta es:</p>
-<p><strong>¿Qué estoy comprando realmente, en qué moneda, con qué instrumento, con qué liquidez y con qué riesgo?</strong></p>
-<p>Este radar no es una lista de compra. Es una guía educativa para entender qué mirar antes de decidir.</p>
-<h2>2. Qué significa esto para alguien en Argentina</h2>
-<p>Desde Argentina, invertir en acciones globales suele mezclar varias capas:</p>
-<p>1. <strong>La empresa real:</strong> NVIDIA, Google, Tesla, Novo Nordisk, Rocket Lab, etc.</p>
-<p>2. <strong>El instrumento disponible:</strong> acción afuera, CEDEAR local, ETF, fondo, bono, dólar MEP/CCL u otro vehículo.</p>
-<p>3. <strong>El dólar implícito:</strong> muchos CEDEARs se mueven por la acción en EE.UU. y también por el CCL.</p>
-<p>4. <strong>La liquidez:</strong> no alcanza con que exista un instrumento; hay que mirar volumen, spread y facilidad de entrada/salida.</p>
-<p>5. <strong>La cartera personal:</strong> una empresa excelente puede ser mala decisión si entra a cualquier precio o concentra demasiado riesgo.</p>
-<p>Dato de contexto dólar usado para esta edición: DolarAPI mostró MEP/Bolsa venta cerca de 1434,3 y CCL venta cerca de 1486,6, con actualización del 23/05 11:54 ART. Fuente: <a href="https://dolarapi.com/v1/dolares">https://dolarapi.com/v1/dolares</a></p>
-<h2>3. Cuatro filtros antes de hacer algo</h2>
-<p>Antes de mirar cualquier ticker, usar estos filtros:</p>
-<ul>
-<li><strong>Negocio:</strong> ¿entiendo cómo gana plata?</li>
-<li><strong>Precio:</strong> ¿la acción ya descuenta un futuro perfecto?</li>
-<li><strong>Instrumento:</strong> ¿lo opero como acción, CEDEAR, ETF, fondo o solo lo sigo como referencia?</li>
-<li><strong>Cartera:</strong> ¿qué pasa si cae 30%, 40% o 50%? ¿Necesito esa plata pronto?</li>
-</ul>
-<p>Una empresa buena no es automáticamente una buena inversión al precio actual. Y una buena inversión afuera puede no ser un buen instrumento local si el CEDEAR tiene poco volumen, spread alto o dólar implícito caro.</p>
-<h2>4. Mapa AI para no comprar humo</h2>
-<p>La tesis de AI se entiende mejor por capas:</p>
-<ul>
-<li><strong>Chips / cerebro:</strong> NVIDIA es el actor más fuerte de esta capa. AMD también compite, aunque hoy no fue el eje.</li>
-<li><strong>Fábricas de chips:</strong> TSM es clave porque fabrica para gran parte del ecosistema.</li>
-<li><strong>Máquinas para fabricar chips:</strong> ASML es cuello de botella por litografía avanzada.</li>
-<li><strong>Memoria:</strong> MU entra por HBM/DRAM, necesaria para modelos grandes.</li>
-<li><strong>Cloud y modelos:</strong> Google/Alphabet, Microsoft y Amazon compiten por infraestructura, modelos y distribución.</li>
-<li><strong>Data centers y energía:</strong> sin electricidad, red y cooling, no hay AI factories.</li>
-<li><strong>Software y uso final:</strong> PLTR y otros capturan valor si convierten AI en contratos reales.</li>
-<li><strong>Hype peligroso:</strong> empresas que solo agregan “AI” al discurso sin ingresos, clientes o moat verificable.</li>
-</ul>
-<h2>5. Señales principales de hoy, ordenadas por utilidad educativa</h2>
-<p>Esto no está ordenado como recomendación de compra. Está ordenado por valor para entender el mercado.</p>
-<h3>A. NVIDIA — tesis fuerte, precio exigente</h3>
-<p>NVIDIA reportó Q1 FY2027 con ingresos de USD 81.6B y Data Center de USD 75.2B. La señal confirma demanda enorme de infraestructura AI.</p>
-<p>En criollo: NVIDIA sigue cobrando peaje en el corazón de AI. El riesgo es que el mercado ya espera muchísimo. Cuando una empresa está cara, incluso buenos resultados pueden no alcanzar.</p>
-<p>Estado: <strong>aprender / seguir / analizar con cuidado</strong>. No es “comprar porque es buena”.</p>
-<p>Fuente: <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027">https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027</a></p>
-<h3>B. Google + Blackstone — AI también es capital y data center</h3>
-<p>Google anunció junto con Blackstone un proyecto de TPU cloud: Blackstone compromete inicialmente USD 5B y el plan espera 500MW online en 2027.</p>
-<p>En criollo: no todo AI pasa por GPUs. También hay chips propios, edificios, energía, refrigeración, contratos y mucho capital. Para el inversor argentino esto sirve para entender la cadena, no para correr atrás de cualquier ticker que diga “data center”.</p>
-<p>Estado: <strong>señal estructural / mirar exposición indirecta</strong>.</p>
-<p>Fuente: <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/blackstone-tpu-cloud/">https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/blackstone-tpu-cloud/</a></p>
-<h3>C. Energía — central para AI, pero no compra automática</h3>
-<p>AI consume electricidad. Por eso utilities, generación, transmisión, transformadores, cooling y data centers pasan a ser parte de la tesis.</p>
-<p>Para Argentina, esta sección importa doble:</p>
-<ul>
-<li>por CEDEARs o acciones globales vinculadas a energía/data centers;</li>
-<li>por empresas argentinas de energía que Charly sigue o puede mirar: YPF, Pampa Energía, Transportadora de Gas del Sur, Central Puerto y otras del ecosistema local.</li>
-</ul>
-<p>Pero cuidado: una energética puede tener demanda real y aun así ser mala inversión si tiene deuda alta, regulación pesada, mal precio o riesgo político.</p>
-<p>Estado: <strong>tema prioritario de seguimiento</strong>, no “comprar energéticas porque AI necesita luz”.</p>
-<p>Fuentes de base del radar: filings SEC citados en el research nocturno para NextEra/Dominion; empresas locales requieren chequeo puntual de balance, regulación y precio antes de cualquier decisión.</p>
-<h3>D. Pharma / salud — GLP-1 explicado simple</h3>
-<p>GLP-1 es la familia de medicamentos para obesidad/diabetes que está moviendo miles de millones de dólares. Novo Nordisk y Lilly compiten fuerte ahí.</p>
-<p>Novo tuvo señales regulatorias verificadas por SEC/6-K sobre Wegovy oral y Wegovy 7.2 mg. La FDA también publicó una warning letter a un proveedor chino de semaglutide API, mostrando riesgo de calidad en la cadena.</p>
-<p>En criollo: pharma puede hacer mucha plata, pero no es “seguro”. Hay ensayos clínicos, aprobaciones, patentes, competencia, producción y regulación.</p>
-<p>Estado: <strong>seguir / aprender mercado GLP-1 / no simplificar como apuesta fácil</strong>.</p>
-<p>Fuentes: <a href="https://www.sec.gov/Archives/edgar/data/353278/000117184326003634/f6k_052226.htm">https://www.sec.gov/Archives/edgar/data/353278/000117184326003634/f6k_052226.htm</a> y <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/harbin-jixianglong-biotech-co-ltd-723330-05012026">https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/harbin-jixianglong-biotech-co-ltd-723330-05012026</a></p>
-<h3>E. Rocket Lab / space — atractivo, pero alto riesgo</h3>
-<p>Rocket Lab sigue en radar por space systems, defensa y lanzamientos. Pero SEC muestra un programa para vender acciones por hasta USD 3.0B.</p>
-<p>En criollo: puede servir para financiar crecimiento, pero también puede diluir. Si hay más acciones dando vueltas, tu pedacito proporcional de la empresa vale menos.</p>
-<p>Estado: <strong>alto riesgo / especulativo / estudiar, no núcleo de cartera</strong>.</p>
-<p>Fuente: <a href="https://www.sec.gov/Archives/edgar/data/1819994/000181999426000044/rocketlabcorporation-424b5.htm">https://www.sec.gov/Archives/edgar/data/1819994/000181999426000044/rocketlabcorporation-424b5.htm</a></p>
-<h2>6. Watchlist práctica para lector argentino</h2>
-<ul>
-<li><strong>NVDA:</strong> aprender/seguir. Antes de operar desde Argentina, verificar instrumento disponible, liquidez, spread y dólar implícito.</li>
-<li><strong>GOOGL/GOOG:</strong> seguir por AI, TPU, cloud y Waymo. Exposición indirecta a varias tesis.</li>
-<li><strong>TSM / ASML / MU:</strong> entender la cadena de semiconductores. Pueden ser excelentes negocios, pero son cíclicos o sensibles a geopolítica/capex.</li>
-<li><strong>PLTR:</strong> software AI con narrativa fuerte. Riesgo: valuación y separar contrato real de hype.</li>
-<li><strong>AAPL:</strong> no venderla como “AI moat” sin señal concreta. Es más ecosistema/dispositivo que AI pura.</li>
-<li><strong>HOOD:</strong> fintech/broker. Seguir si hay monetización real o producto claro, no solo narrativa.</li>
-<li><strong>TSLA:</strong> autonomía, energía y robotaxis; muy dependiente de promesas futuras y valuación.</li>
-<li><strong>NVO / LLY:</strong> pharma/GLP-1. Mirar regulación, ensayos, capacidad productiva y competencia.</li>
-<li><strong>RKLB:</strong> space/defensa. Alto riesgo, volatilidad y posible dilución.</li>
-<li><strong>YPF / PAMP / TGS / CEPU:</strong> capa Argentina de energía. No fueron el titular verificado de esta edición, pero desde Argentina deben estar en el radar porque energía local, regulación, tarifas, Vaca Muerta, exportaciones y dólar pueden pesar tanto como AI global.</li>
-<li><strong>Gold / GLD / GOLD / B:</strong> no mezclar oro físico, ETF, minera o ticker ambiguo. Primero instrumento exacto.</li>
-<li><strong>RVI:</strong> fondo cerrado; mirar NAV, premium/descuento, liquidez y documentación. No tratarlo como compañía operativa.</li>
-</ul>
-<h2>7. Dólar, CEDEARs y costos invisibles</h2>
-<p>Para Argentina, esta parte no es decorativa: es central.</p>
-<ul>
-<li>Si comprás un CEDEAR, no solo mirás la acción afuera; también mirás el CCL implícito.</li>
-<li>Un CEDEAR puede subir porque subió la acción, porque subió el dólar implícito, o por las dos cosas.</li>
-<li>También puede pasar lo contrario: la empresa sube en EE.UU., pero el movimiento local queda neutralizado por el dólar implícito.</li>
-<li>Spreads y comisiones importan. En instrumentos con poco volumen, entrar y salir puede salir caro.</li>
-<li>Antes de operar, mirar: volumen local, punta compradora/vendedora, ratio del CEDEAR, comisiones, horizonte y tamaño dentro de cartera.</li>
-</ul>
-<h2>8. Autonomy / physical AI</h2>
-<p>Autonomía no es una sola empresa:</p>
-<ul>
-<li><strong>Waymo:</strong> exposición indirecta vía Alphabet.</li>
-<li><strong>Tesla:</strong> autos, energía, robotaxis, robotics; mucho futuro en precio.</li>
-<li><strong>Uber:</strong> puede beneficiarse de robotaxis o sufrir si cambia la estructura de movilidad.</li>
-<li><strong>Amazon/Zoox:</strong> exposición indirecta, no pure play.</li>
-<li><strong>Joby:</strong> eVTOL/air taxis, muy alto riesgo y dependiente de regulación.</li>
-</ul>
-<p>Estado: <strong>seguir como tendencia</strong>, pero no comprar promesas sin ingresos verificables.</p>
-<h2>9. Red flags para no comerse humo</h2>
-<ul>
-<li>“AI” pegado a cualquier empresa sin ingresos reales.</li>
-<li>Ranking leído como orden de compra.</li>
-<li>CEDEAR comprado sin mirar CCL, spread y liquidez.</li>
-<li>Energética comprada solo porque “AI consume electricidad”.</li>
-<li>Pharma tratada como segura sin mirar ensayos/regulación.</li>
-<li>Rocket Lab presentada sin mencionar dilución.</li>
-<li>SpaceX/Starlink tratados como comprables si no hay instrumento público claro.</li>
-<li>Bots de trading que prometen 10x, autonomía total o real money sin paper mode.</li>
-</ul>
-<h2>10. Antes de invertir, preguntate</h2>
-<ul>
-<li>¿Estoy entendiendo o estoy entrando por FOMO?</li>
-<li>¿Necesito esta plata en menos de 12 meses?</li>
-<li>¿Tengo fondo de emergencia?</li>
-<li>¿Qué pasa si cae 30%, 40% o 50%?</li>
-<li>¿Estoy concentrando todo en AI?</li>
-<li>¿Estoy mirando negocio, precio, instrumento y cartera, o solo el titular?</li>
-<li>¿Sé si estoy comprando acción, CEDEAR, ETF, fondo o exposición al dólar?</li>
-</ul>
-<h2>11. Qué mirar después</h2>
-<ul>
-<li>NVIDIA: guía, márgenes, demanda real y valuación.</li>
-<li>Google/Blackstone: permisos, energía, clientes y avance real del TPU cloud.</li>
-<li>Energía global y argentina: regulación, deuda, tarifas, Vaca Muerta, exportación, generación y transmisión.</li>
-<li>GLP-1: aprobaciones, producción, ensayos y competencia.</li>
-<li>RKLB: uso del programa de emisión y contratos de defensa.</li>
-<li>Argentina: dólar MEP/CCL, liquidez de CEDEARs, spreads y riesgo local.</li>
-</ul>
-<h2>12. Cierre educativo</h2>
-<p>Este radar sirve para aprender a leer mercados y separar negocio, precio, instrumento y riesgo. No es asesoramiento financiero personalizado ni recomendación de compra o venta.</p>
-<p>Si querés una consulta privada, el foco correcto es educativo: dólar, CEDEARs, acciones, riesgo, horizonte y armado básico de cartera caso por caso. Sin promesas de resultado y sin órdenes públicas de compra/venta.</p></section>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mi Simulación Stock Radar — 23/05</title>
+<style>body{margin:0;background:#071426;color:#eef6ff;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.55}main{max-width:920px;margin:auto;padding:32px 18px 80px}h1{font-size:clamp(34px,7vw,64px);line-height:1;color:#67e8f9;margin:30px 0}h2{color:#7dd3fc;margin-top:34px;border-top:1px solid #164e63;padding-top:22px}h3{color:#a7f3d0}a{color:#67e8f9}.card{border:1px solid #155e75;border-radius:22px;padding:18px;margin:18px 0;background:#0b1b30}.hero{width:100%;max-width:720px;border-radius:24px;border:1px solid #155e75;display:block;margin:22px auto}audio{width:100%}.cta{background:#082f49;border:1px solid #22d3ee;border-radius:22px;padding:18px;margin:20px 0}</style></head><body><main>
+<h1>Mi Simulación Stock Radar — 23/05</h1>
+<img class="hero" src="stock-radar-2026-05-23-imagen-final.png" alt="Mi Simulación Stock Radar">
+<div class="card"><strong>Audio resumen</strong><br><audio controls src="stock-radar-2026-05-23-audio-lola-kore-final.mp3"></audio></div>
+<div class="cta"><a href="stock-radar-2026-05-23-pack-final.zip">Descargar pack final</a> · <a href="stock-radar-2026-05-23-whatsapp-final.txt">Texto WhatsApp</a> · <a href="stock-radar-2026-05-23-reporte-final.md">Reporte Markdown</a> · <a href="https://simulacion-uno-finanzas.web.app/">Web app Finanzas</a></div>
+<h1>Mi Simulación Stock Radar — 23/05</h1><br>
+<br>
+<h2>1. Lectura simple del día</h2><br>
+<br>
+El objetivo de este radar no es decirle a nadie “comprá” o “vendé”. El objetivo es ordenar información para una persona en Argentina que quiere entender dólar, acciones, bonos, CEDEARs y riesgo antes de mover plata real.<br>
+<br>
+La tesis de hoy es <strong>radar antes que impulso</strong>: mirar primero dólar financiero, energéticas argentinas, bonos que marcan MEP/CCL y CEDEARs de AI/globales como capa de aprendizaje.<br>
+<br>
+Fuente de datos local usada: snapshot server-side de Simulación Uno Finanzas generado 2026-05-22T23:57:33-03:00. PPI status: conectado=True; datos públicos sin claves ni cuentas en navegador. Dólar: dolarapi.com. Web app: https://simulacion-uno-finanzas.web.app/<br>
+<br>
+<h2>2. Dólar explicado para principiantes</h2><br>
+<br>
+- Oficial: $ 1.425. Referencia administrativa y comparativa.<br>
+- Blue: $ 1.425. Termómetro social.<br>
+- MEP: $ 1.434,30. Dólar legal vía mercado local.<br>
+- CCL: $ 1.486,60. Dólar financiero para dolarización/salida vía mercado.<br>
+<br>
+Brecha MEP vs oficial: 0.7%. Brecha CCL vs oficial: 4.3%. Traducción: una brecha más alta puede mostrar tensión, pero no decide sola. Importan monto, plazo, necesidad de liquidez y tolerancia al riesgo.<br>
+<br>
+<h2>3. Mapa de radar local</h2><br>
+<br>
+<h3>Energía argentina</h3><br>
+<br>
+- <strong>YPFD — YPF:</strong> en radar. Precio $ 71.025; variación 0.24%. Lectura: Energética nacional clave; prioridad explícita de StockRadar. Fuente: PPI MarketData/Current, 2026-05-22T17:00:03.574-03:00.<br>
+<br>
+- <strong>PAMP — Pampa Energía:</strong> en radar. Precio $ 4.782,50; variación -1.13%. Lectura: Generación eléctrica y gas; proxy local de energía e infraestructura. Fuente: PPI MarketData/Current, 2026-05-22T17:00:03.553-03:00.<br>
+<br>
+- <strong>CEPU — Central Puerto:</strong> señal fortalecida. Precio $ 2.077; variación -3.03%. Lectura: Generación eléctrica local; sensible a tarifas, demanda y regulación. Fuente: PPI MarketData/Current, 2026-05-22T17:00:03.233-03:00.<br>
+<br>
+- <strong>TGSU2 — Transportadora de Gas del Sur:</strong> en radar. Precio $ 8.685; variación -1.8%. Lectura: Gas/midstream argentino; observar marco regulatorio y Vaca Muerta. Fuente: PPI MarketData/Current, 2026-05-22T17:00:03.294-03:00.<br>
+<br>
+- <strong>TGNO4 — Transportadora de Gas del Norte:</strong> en radar. Precio $ 3.950; variación -1.74%. Lectura: Transporte de gas; radar local por infraestructura energética. Fuente: PPI MarketData/Current, 2026-05-22T17:00:03.292-03:00.<br>
+<br>
+- <strong>EDN — Edenor:</strong> en radar. Precio $ 1.802; variación -2.06%. Lectura: Distribución eléctrica; proxy regulatorio/tarifario. Fuente: PPI MarketData/Current, 2026-05-22T17:00:03.519-03:00.<br>
+<br>
+- <strong>TRAN — Transener:</strong> en radar. Precio $ 3.890; variación 1.83%. Lectura: Transmisión eléctrica; infraestructura crítica local. Fuente: PPI MarketData/Current, 2026-05-22T17:00:03.301-03:00.<br>
+<br>
+<br>
+<h3>Bonos / dólar financiero</h3><br>
+<br>
+- <strong>AL30 — Bono AL30:</strong> en radar. Precio $ 91.500; variación 0.54%. Sirve para mirar MEP/CCL, liquidez y riesgo argentino. Fuente: PPI MarketData/Current, 2026-05-22T17:00:09.799-03:00.<br>
+<br>
+- <strong>GD30 — Bono GD30:</strong> en radar. Precio $ 92.900; variación 0.37%. Sirve para mirar MEP/CCL, liquidez y riesgo argentino. Fuente: PPI MarketData/Current, 2026-05-22T17:00:13.79-03:00.<br>
+<br>
+<br>
+<h3>CEDEARs / AI global desde Argentina</h3><br>
+<br>
+- <strong>NVDA — NVIDIA CEDEAR:</strong> en radar. Precio local $ 13.370; variación -1.25%. Lectura: seguir AI/mercado global, pero con doble capa: acción afuera + dólar local. Fuente: PPI MarketData/Current, 2026-05-22T17:00:01.721-03:00.<br>
+<br>
+- <strong>TSM — TSMC CEDEAR:</strong> en radar. Precio local $ 66.675; variación 0.03%. Lectura: seguir AI/mercado global, pero con doble capa: acción afuera + dólar local. Fuente: PPI MarketData/Current, 2026-05-22T17:00:01.493-03:00.<br>
+<br>
+- <strong>PLTR — Palantir CEDEAR:</strong> en radar. Precio local $ 67.850; variación 0.14%. Lectura: seguir AI/mercado global, pero con doble capa: acción afuera + dólar local. Fuente: PPI MarketData/Current, 2026-05-22T17:00:02.045-03:00.<br>
+<br>
+- <strong>GOOGL — Alphabet CEDEAR:</strong> en radar. Precio local $ 9.805; variación -0.65%. Lectura: seguir AI/mercado global, pero con doble capa: acción afuera + dólar local. Fuente: PPI MarketData/Current, 2026-05-22T17:00:00.902-03:00.<br>
+<br>
+- <strong>SPY — S&amp;P 500 CEDEAR:</strong> en radar. Precio local $ 55.425; variación 0.91%. Lectura: seguir AI/mercado global, pero con doble capa: acción afuera + dólar local. Fuente: PPI MarketData/Current, 2026-05-22T17:00:01.851-03:00.<br>
+<br>
+<br>
+<h2>4. Qué significa cada etiqueta</h2><br>
+<br>
+- <strong>En radar:</strong> vale seguir y entender; no implica compra.<br>
+- <strong>Señal fortalecida:</strong> hubo movimiento o señal que merece más atención; requiere análisis humano.<br>
+- <strong>No accionable:</strong> falta fuente, instrumento, liquidez, precio razonable o contexto personal.<br>
+<br>
+<br>
+<h2>5. Modo principiante</h2><br>
+<br>
+- Una acción es una parte de una empresa. Puede subir o bajar. No es plazo fijo.<br>
+- Un bono es deuda y, en Argentina, también ayuda a leer dólar MEP/CCL y riesgo.<br>
+- Un CEDEAR permite mirar empresas de afuera desde Argentina, pero no elimina riesgo cambiario ni de liquidez.<br>
+- Spread es la diferencia entre precio comprador y vendedor; si es alto, entrar y salir sale caro.<br>
+- Liquidez es qué tan fácil es comprar o vender sin romper el precio.<br>
+- Radar no es recomendación: es una herramienta para ordenar preguntas.<br>
+<br>
+<br>
+<h2>6. Web app nueva</h2><br>
+<br>
+La web app de Simulación Uno Finanzas queda como destino de expansión: radar de hoy, dólar explicado, cards de activos, modo principiante, simulador educativo y área privada prototipo para guardar intereses o pedir consulta.<br>
+<br>
+https://simulacion-uno-finanzas.web.app/<br>
+<br>
+<br>
+<h2>7. Red flags</h2><br>
+<br>
+- No actuar por ansiedad.<br>
+- No tomar “en radar” como “comprar”.<br>
+- No mirar CEDEARs sin entender CCL, spread y liquidez.<br>
+- No mirar energéticas sin entender regulación, tarifas, deuda y contexto político.<br>
+- No cargar una cartera sin horizonte ni fondo de emergencia.<br>
+<br>
+<br>
+<h2>8. Qué mirar después</h2><br>
+<br>
+- Dólar MEP/CCL y brecha contra oficial.<br>
+- Volumen real en energéticas argentinas.<br>
+- AL30/GD30 como termómetro de tensión financiera.<br>
+- CEDEARs de AI: si se mueven por empresa o por dólar local.<br>
+- Noticias/fuentes detrás de cualquier movimiento fuerte.<br>
+<br>
+<br>
+<h2>CTA privado</h2><br>
+<br>
+Dólar · Acciones · Consulta privada<br>
+Compra/venta de dólares, CEDEARs, acciones y estrategia personal: escribime por privado y lo vemos caso por caso.<br>
+<br>
+Este reporte es informativo y educativo. No es asesoramiento financiero personalizado ni promesa de resultado.<br>
+
 </main></body></html>
