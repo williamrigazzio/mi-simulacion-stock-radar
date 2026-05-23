@@ -80,10 +80,14 @@ La señal del día no es “comprá AI”. La señal es que AI se está convirti
 
 Para el lector argentino, la prioridad es aprender a separar cuatro capas: empresa, precio, instrumento y cartera personal.
 
-## Servicio privado
+## Compra/venta de dólares ya
 
-Dólar · acciones · estrategia personal caso por caso.
+COMPRAMOS DÓLARES.
 
-Si querés servicios personalizados, consultas privadas o compra/venta de dólares, escribime por privado.
+Pagamos $1.400 por fracciones desde USD 2.000.
 
-Reporte gratuito informativo. No es asesoramiento financiero personalizado ni promesa de resultado.
+Por menos de USD 2.000, pagamos $1.390.
+
+También vemos venta de dólares, acciones, CEDEARs y estrategia financiera caso por caso. Escribime por privado y confirmamos la operación.
+
+Reporte gratuito informativo. No es asesoramiento financiero personalizado ni promesa de resultado. Cotización sujeta a confirmación al momento de operar.
