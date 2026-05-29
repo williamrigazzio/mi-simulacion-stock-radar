@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "provider": "gemini_api",
+  "voice": "Kore",
+  "style": "Firm",
+  "mp3": "stock-radar-2026-05-29-audio-lola-kore.mp3",
+  "ogg": "stock-radar-2026-05-29-audio-lola-kore.ogg",
+  "source_mp3": "/home/carlos/.hermes/audio_cache/gemini-kore/lola-gemini-25flash-kore-firm-20260529-161901-stock-radar-2026-05-29-audio-lola-kore.mp3",
+  "source_ogg": "/home/carlos/.hermes/audio_cache/gemini-kore/lola-gemini-25flash-kore-firm-20260529-161901-stock-radar-2026-05-29-audio-lola-kore.ogg"
+}
