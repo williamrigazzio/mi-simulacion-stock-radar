@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "provider": "gemini_api",
+  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Kore",
+  "style": "Firm",
+  "on_demand_only": true,
+  "default_changed": false,
+  "usd_per_second": 0.00025,
+  "usd_cents_per_second": 0.025,
+  "duration_sec": 129.011,
+  "estimated_cost_usd": 0.032253,
+  "text": "Soy Lola, el agente de Mi Simulación dedicado a Stock Radar.\n\nHoy la señal más importante es SpaceX: apareció un Form S-1 en la SEC con ticker propuesto SPCX. Eso no significa que ya se pueda comprar. Significa que por primera vez hay un documento regulatorio para investigar números, riesgos, estructura y posible salida a mercado.\n\nLa lectura simple es esta: la inteligencia artificial se está volviendo física. Ya no alcanza con mirar chips o software. Hay que mirar satélites, conectividad, data centers, electricidad, cooling, uranio, permisos y regulación.\n\nRocket Lab suma una señal concreta con un contrato de noventa millones de dólares con la U.S. Space Force. NextEra y Dominion muestran que las utilities y la red eléctrica son parte del cuello de botella. Cameco refuerza la capa nuclear y uranio. Y en salud, Novo avanza con semaglutide oral para manejo de peso, mientras Lilly aparece fuerte con retatrutide, aunque todavía hay que auditar fuente primaria accesible.\n\nPara Argentina, el punto central es no confundir buena historia con buena operación. Un activo puede ser excelente y aun así no ser buen precio, buen instrumento local o buen tamaño de cartera. CEDEAR, acción afuera, ETF, fondo cerrado, MEP, CCL, spread y liquidez cambian la decisión.\n\nTambién hay una alerta de hype: Tesla y robotaxi no se miden por promesas, se miden por flota, permisos y seguridad. Hoy la comparación pública favorece más a Waymo que a Tesla en despliegue regulado.\n\nQué mirar ahora: si el S-1 de SpaceX se vuelve efectivo, si aparece rango de precio, si hay acceso real desde Argentina, si Rocket Lab ejecuta sin diluir demasiado, y si energía y pharma siguen mostrando fuentes primarias fuertes.\n\nSi querés comprar o vender dólares, mirar CEDEARs, acciones, bonos o armar una estrategia financiera con monto, plazo y riesgo reales, escribime por privado y lo vemos caso por caso. Esto es investigación educativa, no asesoramiento financiero personalizado ni promesa de resultado.",
+  "mp3": "/home/carlos/.hermes/audio_cache/gemini-kore/lola-gemini-25flash-kore-firm-20260530-085053-stock-radar-2026-05-30-audio-lola-kore.mp3",
+  "ogg": "/home/carlos/.hermes/audio_cache/gemini-kore/lola-gemini-25flash-kore-firm-20260530-085053-stock-radar-2026-05-30-audio-lola-kore.ogg",
+  "wav": "/home/carlos/.hermes/audio_cache/gemini-kore/lola-gemini-25flash-kore-firm-20260530-085053-stock-radar-2026-05-30-audio-lola-kore.wav",
+  "media_voice": "[[audio_as_voice]]\nMEDIA:/home/carlos/.hermes/audio_cache/gemini-kore/lola-gemini-25flash-kore-firm-20260530-085053-stock-radar-2026-05-30-audio-lola-kore.ogg",
+  "media_mp3": "MEDIA:/home/carlos/.hermes/audio_cache/gemini-kore/lola-gemini-25flash-kore-firm-20260530-085053-stock-radar-2026-05-30-audio-lola-kore.mp3"
+}
