@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "provider": "edge",
+  "voice": "es-AR-ElenaNeural",
+  "costControl": "local/free TTS; on-demand paused",
+  "generatedAt": "2026-06-03T08:46:04-03:00",
+  "script": "stock-radar-2026-06-03-audio-lola-kore-script.txt"
+}
