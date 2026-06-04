@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "provider": "edge",
+  "voice": "es-AR-ElenaNeural",
+  "generatedAt": "2026-06-04T08:50:34-03:00",
+  "mp3": "/home/carlos/.hermes/tmp/stock-radar-2026-06-04-audio-lola-kore.mp3",
+  "ogg": "/home/carlos/.hermes/tmp/stock-radar-2026-06-04-audio-lola-kore.ogg",
+  "note": "local/free TTS; legacy filename retained"
+}
