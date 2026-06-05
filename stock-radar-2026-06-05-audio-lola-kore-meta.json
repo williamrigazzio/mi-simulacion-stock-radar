@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "provider": "edge",
+  "voice": "es-AR-ElenaNeural",
+  "stdout": "{\"ok\": true, \"provider\": \"edge\", \"voice\": \"es-AR-ElenaNeural\", \"path\": \"/tmp/lola-edge-elena-20260605-085004.ogg\", \"audio_as_voice_tag\": \"[[audio_as_voice]]\", \"media_tag\": \"MEDIA:/tmp/lola-edge-elena-20260605-085004.ogg\"}\n",
+  "stderr": "",
+  "path": "/tmp/lola-edge-elena-20260605-085004.ogg",
+  "audio_as_voice_tag": "[[audio_as_voice]]",
+  "media_tag": "MEDIA:/tmp/lola-edge-elena-20260605-085004.ogg",
+  "copied_ogg": "/home/carlos/.hermes/tmp/stock-radar-2026-06-05-audio-lola-kore.ogg",
+  "mp3": "/home/carlos/.hermes/tmp/stock-radar-2026-06-05-audio-lola-kore.mp3"
+}
