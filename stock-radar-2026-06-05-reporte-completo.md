@@ -14,8 +14,8 @@ En criollo: AI no es solamente “chips”. También es networking, chips a medi
 
 La tesis del día: AI se está transformando en una carrera de capital físico. Ganan más chances las compañías que convierten demanda en ingresos reales, financian capex sin romper al accionista y tienen posición difícil de reemplazar en el stack.
 
-- Broadcom / AVGO fortalece la capa custom silicon + networking: fuente primaria SEC reporta AI semiconductor revenue de USD 10.800M, +143% interanual.
-- Alphabet / GOOG-GOOGL fortalece la idea de escala, pero también trae riesgo de dilución/financiamiento: fuente primaria SEC menciona raise total de USD 84.750M para AI infrastructure/compute y capex 2026 esperado de USD 180.000M-190.000M.
+- Broadcom / AVGO fortalece la capa custom silicon + networking: fuente primaria SEC reporta AI semiconductor revenue de USD 10.800 millones, +143% interanual.
+- Alphabet / GOOG-GOOGL fortalece la idea de escala, pero también trae riesgo de dilución/financiamiento: fuente primaria SEC menciona raise total de USD 84.750 millones para AI infrastructure/compute y capex 2026 esperado de USD 180.000-190.000 millones.
 - TSMC / TSM confirma moat estructural: consolidated revenue anual NT$3.809,05B, net income NT$1.717,88B y EPS diluido NT$66,25.
 - Energía/nuclear/utilities sigue en radar: CEG, Dominion y otros muestran que la red y el costo de capital son parte del trade AI.
 - Pharma queda considerada: FDA acelera draft guidance para cell and gene therapies; Lilly/retatrutide apareció por discovery, pero sin fuente primaria final en esta corrida no se eleva como titular.
@@ -24,7 +24,7 @@ La tesis del día: AI se está transformando en una carrera de capital físico. 
 
 ### 1) Broadcom / AVGO — señal fortalecida
 
-Broadcom reportó Q2 FY2026 con revenue de USD 22.187M, +48% interanual; AI semiconductor revenue de USD 10.800M, +143% interanual; free cash flow de USD 10.262M; y guía de Q3 revenue de aproximadamente USD 29.400M con adjusted EBITDA cerca de 68%.
+Broadcom reportó Q2 FY2026 con revenue de USD 22.187 millones, +48% interanual; AI semiconductor revenue de USD 10.800 millones, +143% interanual; free cash flow de USD 10.262 millones; y guía de Q3 revenue de aproximadamente USD 29.400 millones con adjusted EBITDA cerca de 68%.
 
 Lectura simple: AVGO no es un accesorio de NVIDIA. Puede capturar AI capex por custom silicon, networking y software de infraestructura. El ticker correcto es AVGO, no “B”.
 
@@ -35,7 +35,7 @@ https://www.sec.gov/Archives/edgar/data/1730168/000173016826000051/avgo-05032026
 
 ### 2) Alphabet / GOOG-GOOGL — escala AI con riesgo de dilución
 
-Alphabet anunció por SEC un equity capital raise total de USD 84.750M para expandir AI infrastructure and compute: USD 40.000M vía ATM, USD 10.000M private placement Berkshire, acciones Class A/Class C y mandatory convertible preferred. El mismo documento menciona capex esperado 2026 de USD 180.000M-190.000M.
+Alphabet anunció por SEC un equity capital raise total de USD 84.750 millones para expandir AI infrastructure and compute: USD 40.000 millones vía ATM, USD 10.000 millones private placement Berkshire, acciones Class A/Class C y mandatory convertible preferred. El mismo documento menciona capex esperado 2026 de USD 180.000-190.000 millones.
 
 Lectura simple: Alphabet tiene moat real —cloud, datos, distribución, TPUs, Waymo—, pero la carrera AI exige capital gigante. Una empresa buena puede ser una mala entrada si el precio, la dilución o el instrumento no cierran.
 
@@ -57,7 +57,7 @@ https://www.sec.gov/Archives/edgar/data/1046179/000104617926000302/tsm-agmx20260
 
 ### 4) Energía y nuclear — AI también se paga en megavatios
 
-Constellation Energy tuvo una oferta secundaria de 11M shares a USD 281 por acción. CEG no recibe proceeds; además recompra 2M shares por aproximadamente USD 558M. El filing se define como el mayor productor nuclear privado de EE.UU., con 55 GW y 10% de la clean energy nacional. Dominion Energy, por su lado, emitió term sheet para USD 825M en Senior Notes 5,35% due 2036.
+Constellation Energy tuvo una oferta secundaria de 11M shares a USD 281 por acción. CEG no recibe proceeds; además recompra 2M shares por aproximadamente USD 558 millones. El filing se define como el mayor productor nuclear privado de EE.UU., con 55 GW y 10% de la clean energy nacional. Dominion Energy, por su lado, emitió term sheet para USD 825 millones en Senior Notes 5,35% due 2036.
 
 Lectura simple: si los data centers consumen más electricidad, utilities, nuclear, deuda, costo de capital y regulación importan. Pero una utility no es “AI segura”: tiene tasas, deuda, reguladores, permisos y riesgo político.
 
@@ -69,9 +69,9 @@ https://www.sec.gov/Archives/edgar/data/715957/000119312526255560/d50821dfwp.htm
 
 ### 5) DXYZ y RVI — wrappers de privadas, no acceso mágico
 
-DXYZ reportó net assets de USD 748,36M y exposición vía SPVs a SpaceX, OpenAI, Anthropic, Stripe y Databricks. Su 424B5 previo mostraba NAV/share de USD 24,56 al 31/03/2026 y precio de USD 61,66 al 21/05/2026, un premium aproximado de 151% contra ese NAV histórico.
+DXYZ reportó net assets de USD 748,36 millones y exposición vía SPVs a SpaceX, OpenAI, Anthropic, Stripe y Databricks. Su 424B5 previo mostraba NAV/share de USD 24,56 al 31/03/2026 y precio de USD 61,66 al 21/05/2026, un premium aproximado de 151% contra ese NAV histórico.
 
-RVI reportó net assets de USD 655,32M y holdings como Stripe, Databricks, ElevenLabs y First American Government Obligations Fund. Además, Form 144 del 03/06 mostró venta propuesta de 3,7M shares, market value USD 170,2M.
+RVI reportó net assets de USD 655,32 millones y holdings como Stripe, Databricks, ElevenLabs y First American Government Obligations Fund. Además, Form 144 del 03/06 mostró venta propuesta de 3,7M shares, market value USD 170,2 millones.
 
 Lectura simple: estos vehículos sirven para aprender y eventualmente para mirar exposición indirecta a private tech. No son “comprar SpaceX/OpenAI barato”. Hay NAV, premium/descuento, liquidez, fees, activos Level 3/restricted y timing de ventas.
 
