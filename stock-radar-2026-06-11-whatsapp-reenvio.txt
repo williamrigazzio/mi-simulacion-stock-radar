@@ -3,9 +3,9 @@ https://williamrigazzio.github.io/mi-simulacion-stock-radar/stock-radar-2026-06-
 🟢 *Dólar & Acciones YA — 11/06*
 
 Radar de hoy:
-• AI se va al grid: GEV GridOS muestra que data centers necesitan red, no solo GPUs.
-• Defensa real: GE Aerospace reporta backlog > USD 210.000 millones; AVAV queda en radar, no hype.
-• Argentina filtra todo: blue venta $1.445, MEP $1.446,88, CCL $1.493,03; CEDEAR/fondo ≠ acción directa.
+• GEV/GE: AI se juega en red y defensa; backlog aeroespacial > USD 210.000 millones.
+• Physical AI: AWS/NVDA y NBIS empujan robótica/simulación; no es solo chatbots.
+• Argentina filtra todo: MEP AL30 $1.446,88, CCL $1.493,03; CEDEAR/fondo ≠ acción directa.
 
 Web oficial:
 https://simulacion-uno-finanzas.web.app/
