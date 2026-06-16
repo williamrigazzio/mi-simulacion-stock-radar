@@ -1,0 +1,179 @@
+{
+  "blue": {
+    "oficial": {
+      "value_avg": 1427.5,
+      "value_sell": 1453.0,
+      "value_buy": 1402.0
+    },
+    "blue": {
+      "value_avg": 1450.0,
+      "value_sell": 1460.0,
+      "value_buy": 1440.0
+    },
+    "oficial_euro": {
+      "value_avg": 1551.0,
+      "value_sell": 1579.0,
+      "value_buy": 1523.0
+    },
+    "blue_euro": {
+      "value_avg": 1576.0,
+      "value_sell": 1587.0,
+      "value_buy": 1565.0
+    },
+    "last_update": "2026-06-16T08:45:56.61022-03:00"
+  },
+  "cripto": {
+    "mayorista": {
+      "price": 1428,
+      "variation": 0,
+      "timestamp": 1781290843
+    },
+    "oficial": {
+      "price": 1450,
+      "ask": 1450,
+      "bid": 1400,
+      "variation": 0,
+      "timestamp": 1781610179
+    },
+    "ahorro": {
+      "ask": 1450,
+      "bid": 1400,
+      "variation": 0,
+      "timestamp": 1781610179
+    },
+    "tarjeta": {
+      "price": 1885,
+      "variation": 0,
+      "timestamp": 1781610179
+    },
+    "blue": {
+      "ask": 1460,
+      "bid": 1440,
+      "variation": 0,
+      "timestamp": 1781610499
+    },
+    "cripto": {
+      "ccb": {
+        "ask": 1507.225,
+        "bid": 1492.981,
+        "variation": 0.49,
+        "timestamp": 1781610604
+      },
+      "usdt": {
+        "ask": 1506,
+        "bid": 1499.435,
+        "variation": 0.53,
+        "timestamp": 1781610604
+      },
+      "usdc": {
+        "ask": 1500.01,
+        "bid": 1500.45,
+        "variation": 0.54,
+        "timestamp": 1781610604
+      }
+    },
+    "mep": {
+      "al30": {
+        "24hs": {
+          "price": 1448.2,
+          "variation": 0,
+          "timestamp": 1781294219
+        },
+        "ci": {
+          "price": 1445.72,
+          "variation": 0,
+          "timestamp": 1781294217
+        }
+      },
+      "gd30": {
+        "24hs": {
+          "price": 1446.06,
+          "variation": 0,
+          "timestamp": 1781294219
+        },
+        "ci": {
+          "price": 1444.13,
+          "variation": 0,
+          "timestamp": 1781294177
+        }
+      },
+      "letras": {
+        "name": "BNM25",
+        "24hs": {
+          "price": 1418.21,
+          "variation": 0,
+          "timestamp": 1778788819
+        },
+        "ci": {
+          "price": 1432.24,
+          "variation": 0,
+          "timestamp": 1778788764
+        }
+      },
+      "bpo27": {
+        "24hs": {
+          "price": 1451.68,
+          "variation": 0,
+          "timestamp": 1781294008
+        },
+        "ci": {
+          "price": 1449.56,
+          "variation": 0,
+          "timestamp": 1781288050
+        }
+      }
+    },
+    "ccl": {
+      "al30": {
+        "24hs": {
+          "price": 1495.28,
+          "variation": 0,
+          "timestamp": 1781294206
+        },
+        "ci": {
+          "price": 1490.02,
+          "variation": 0,
+          "timestamp": 1781294214
+        }
+      },
+      "gd30": {
+        "24hs": {
+          "price": 1495.86,
+          "variation": 0,
+          "timestamp": 1781293849
+        },
+        "ci": {
+          "price": 1483.57,
+          "variation": 0,
+          "timestamp": 1781293838
+        }
+      },
+      "letras": {
+        "name": "BNM25",
+        "24hs": {
+          "price": 1485.25,
+          "variation": 0,
+          "timestamp": 1778529558
+        },
+        "ci": {
+          "price": 1484.67,
+          "variation": 0,
+          "timestamp": 1778529558
+        }
+      },
+      "bpo27": {
+        "24hs": {
+          "price": 1496.15,
+          "variation": 0,
+          "timestamp": 1781287382
+        },
+        "ci": {
+          "price": 1494.98,
+          "variation": 0,
+          "timestamp": 1781288050
+        }
+      }
+    }
+  },
+  "generated": "2026-06-16T11:50:11.456393+00:00"
+}
