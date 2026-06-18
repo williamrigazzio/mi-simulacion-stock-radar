@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-18",
+  "blue": {
+    "bid": 1443,
+    "ask": 1475,
+    "source": "BlueLytics",
+    "timestamp": "2026-06-18T08:46:02-03:00"
+  },
+  "oficial_avg": {
+    "value": 1435.5,
+    "source": "BlueLytics",
+    "timestamp": "2026-06-18T08:46:02-03:00"
+  },
+  "mep_al30_24h": {
+    "price": 1461.41,
+    "source": "CriptoYa",
+    "timestamp": "2026-06-17T16:56:59-03:00",
+    "note": "cierre previo/referencia, no broker vivo"
+  },
+  "ccl_al30_24h": {
+    "price": 1504.4,
+    "source": "CriptoYa",
+    "timestamp": "2026-06-17T16:56:59-03:00",
+    "note": "cierre previo/referencia, no broker vivo"
+  },
+  "cripto_usdt_ask": {
+    "price": 1508.731,
+    "source": "CriptoYa",
+    "timestamp": "2026-06-18T08:46:13-03:00"
+  }
+}
