@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "provider": "Edge local es-AR-ElenaNeural",
+  "elevenlabs_used": false,
+  "date": "2026-06-25",
+  "script_path": "/home/carlos/.hermes/tmp/stock-radar-2026-06-25-audio-script.txt",
+  "mp3": "/home/carlos/.hermes/tmp/stock-radar-2026-06-25-audio-lola.mp3",
+  "ogg": "/home/carlos/.hermes/tmp/stock-radar-2026-06-25-audio-lola.ogg",
+  "copied": [
+    "/home/carlos/.hermes/tmp/stock-radar-2026-06-25-audio-lola.mp3",
+    "/home/carlos/.hermes/tmp/stock-radar-2026-06-25-audio-lola.ogg",
+    "/home/carlos/.hermes/tmp/mi-simulacion-stock-radar-pages/stock-radar-2026-06-25-audio-lola.mp3",
+    "/home/carlos/.hermes/tmp/mi-simulacion-stock-radar-pages/stock-radar-2026-06-25-audio-lola.ogg",
+    "/home/carlos/.hermes/projects/simulacion1-finanzas-app/out/stock-radar-2026-06-25-audio-lola.mp3",
+    "/home/carlos/.hermes/projects/simulacion1-finanzas-app/out/stock-radar-2026-06-25-audio-lola.ogg"
+  ],
+  "html_patched": [],
+  "source_meta": {
+    "ok": true,
+    "provider": "edge",
+    "voice": "es-AR-ElenaNeural",
+    "path": "/home/carlos/.hermes/audio_cache/lola-local-edge-elena-20260625-084854-soy-lola-del-stock-radar-de-mi-simulaci.ogg",
+    "mp3_path": "/home/carlos/.hermes/audio_cache/lola-local-edge-elena-20260625-084854-soy-lola-del-stock-radar-de-mi-simulaci.mp3",
+    "audio_as_voice_tag": "[[audio_as_voice]]",
+    "media_tag": "MEDIA:/home/carlos/.hermes/audio_cache/lola-local-edge-elena-20260625-084854-soy-lola-del-stock-radar-de-mi-simulaci.ogg",
+    "chars": 1294,
+    "ogg_size": 538202,
+    "mp3_size": 566784
+  },
+  "paid_voice_used": false,
+  "paid_voice_policy": "blocked; local/free TTS only",
+  "sizes": {
+    "mp3": 566784,
+    "ogg": 538202
+  }
+}
