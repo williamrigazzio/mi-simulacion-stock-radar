@@ -35,9 +35,9 @@ La investigación nocturna revisó la watchlist, AI/semis, energía y power hard
 
 ## Capa Argentina: dólar, CEDEARs e instrumento real
 
-A las **08:46 de Mendoza**, CriptoYa mostró como última referencia AL30 24hs **MEP $1.528,61** (14/08 16:59) y **CCL $1.614,08** (14/08 16:59). Son referencias de cierre previo, **no** precio intradiario ejecutable de IOL/PPI. BlueLytics no entregó una respuesta completa usable en esta corrida; no se inventa una cotización oficial/blue.
+A las **08:48 de Mendoza**, BlueLytics mostró como última actualización disponible dólar oficial comprador/vendedor de **$1.461/$1.513** y blue de **$1.512/$1.545** (14/08 19:45). CriptoYa mostró AL30 24hs **MEP $1.528,61** (14/08 16:59) y **CCL $1.614,08** (14/08 16:59). Son referencias de cierre previo, **no** precio intradiario ejecutable de IOL/PPI.
 
-Fuente: https://criptoya.com/api/dolar
+Fuentes: https://api.bluelytics.com.ar/v2/latest y https://criptoya.com/api/dolar
 
 En criollo: un CEDEAR no es “una acción extranjera en pesos” sin más. Mezcla el precio del activo afuera, CCL implícito, ratio, puntas de compra/venta, volumen, liquidación y comisiones. Por eso una buena empresa no garantiza una buena inversión al precio actual, y una buena acción global no garantiza un instrumento local líquido.
 
