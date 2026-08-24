@@ -13,7 +13,7 @@ La segunda lectura útil es de método: no elevamos rumores de NVIDIA sobre prec
 ## Argentina: dólar e instrumento antes que ticker
 
 - **Referencias públicas, no puntas ejecutables de broker:** BlueLytics: compra/venta ARS 1.517,00 / ARS 1.550,00; actualización 2026-08-24T08:45:51.200036-03:00.
-- **MEP/CCL:** MEP AL30 24h: no disponible, timestamp sin timestamp informado; CCL AL30 24h: no disponible, timestamp sin timestamp informado. Si esos horarios son de cierre previo o están atrasados, no sirven como cotización intradiaria para ejecutar: confirmá en tu broker al momento de operar.
+- **MEP/CCL:** MEP AL30 24h: ARS 1.528,13, timestamp 21/08 16:59; CCL AL30 24h: ARS 1.590,34, timestamp 21/08 16:59. Si esos horarios son de cierre previo o están atrasados, no sirven como cotización intradiaria para ejecutar: confirmá en tu broker al momento de operar.
 - **BABA desde Argentina:** el intake de Charly verificó que existe CEDEAR `BABA` y que Banco Comafi informa ratio **9:1**. Antes de pensar una operación faltan precio vivo, volumen, spread, CCL implícito, comisiones y horizonte.
 - **En criollo:** un CEDEAR es un certificado local ligado a un activo de afuera; no es lo mismo que comprar el ADR directamente. Buena empresa ≠ buena inversión al precio actual ≠ buen instrumento local ≠ tamaño correcto dentro de una cartera.
 - Fuentes de dólar: [BlueLytics](https://api.bluelytics.com.ar/v2/latest) · [CriptoYa](https://criptoya.com/api/dolar).
