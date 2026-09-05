@@ -78,8 +78,8 @@ En pharma conviene separar cuatro cosas: aprobación regulatoria, cobertura, ado
 
 ## Capa Argentina: dólar, CEDEAR y ejecución humana
 
-- **BlueLytics, 05/09 08:46 (-03):** dólar blue compra/venta **ARS 1,507 / 1,540**.
-- **CriptoYa:** MEP AL30 24h **ARS 1,525.67** y CCL AL30 24h **ARS 1,597.88**, con timestamp **04/09 16:59 (-03)**. Son referencias públicas, no cotización operable garantizada de broker.
+- **BlueLytics, 05/09 08:46 (-03):** dólar blue compra/venta **ARS 1.507 / 1.540**.
+- **CriptoYa:** MEP AL30 24h **ARS 1.525,67** y CCL AL30 24h **ARS 1.597,88**, con timestamp **04/09 16:59 (-03)**. Son referencias públicas, no cotización operable garantizada de broker.
 - Un CEDEAR mezcla subyacente en dólares, ratio, CCL implícito y microestructura local. **Buena empresa ≠ buena inversión al precio actual ≠ buen instrumento local.**
 - Para una decisión humana: verificar precio límite, rueda, puntas, spread, volumen, comisión, liquidación, ratio, CCL/MEP y disponibilidad real en IOL/PPI. Para la vía global: exchange, moneda, liquidez, fiscalidad y compliance.
 
