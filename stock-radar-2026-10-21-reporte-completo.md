@@ -18,6 +18,11 @@ La edición inicial omitió el movimiento que realmente domina la conversación 
 
 Fuentes: [Alphabet IR — resultados Q3, 28/10](https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Third-Quarter-2026-Results-2026-FCcqxfIfmh) · [Reuters, 28/10](https://www.streetinsider.com/Reuters/Alphabet+stock+sinks+as+search+woes+cause+revenue+miss%2C+cash+burn+worsens/27249195.html) · [CNBC, 28/10](https://www.cnbc.com/2026/10/28/alphabet-q3-earnings-search-ai.html)
 
+## SpaceX / SPCX: una afirmación grande exige identificar el instrumento
+Se está hablando de una suba de 890% en un año. No la publicamos como hecho porque la serie verificable consultada para **SPCX** recién comienza el 12/06/2026; entre ese primer cierre disponible de USD 160,95 y el 30/10 cerró en USD 134,72: **−16,30%**, con sólo 98 ruedas disponibles. Eso no prueba ni refuta retornos privados anteriores, valuaciones secundarias o algún vehículo distinto; prueba que **no se puede llamar “subió 890% en un año” a SPCX sin identificar qué activo, precio inicial, fecha y mercado se están comparando**.
+
+La tesis que sí merece seguirse es otra: SpaceX combina lanzamiento, Starlink, infraestructura orbital y capex muy intensivo. Si hay una empresa pública o un vehículo con exposición a ese ecosistema, hay que separar negocio, acceso, precio pagado, liquidez y dilución. Una historia espectacular puede ser una inversión mala si el vehículo cotiza con prima excesiva o si el crecimiento ya está descontado.
+
 ## Tesis central: mirar pedidos, márgenes y caja juntos
 Una cartera de pedidos es trabajo contratado pendiente; no es dinero ya cobrado. El flujo de caja libre aproxima el efectivo que queda después de inversiones de capital, según la definición de cada emisor. Puede bajar en un trimestre por calendario de cobros o inversión; no prueba por sí solo deterioro estructural. Hay que mirar también el acumulado y las explicaciones de la empresa.
 
